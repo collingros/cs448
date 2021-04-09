@@ -1,0 +1,20 @@
+{
+
+	"general": {
+		"date_of_ref": "",
+		"spanish_speaker_only": 0
+	},
+	"client_info": { 
+		"name": "",
+		"id": 0,
+		"dob": "",
+		"in_shelter": 0,
+		"safe_phone_num": 0,
+		"email": ""
+	},
+	"referring_dept": {
+		"advocate_case_manager": "",
+		"crisis": 0
+	}
+}
+
