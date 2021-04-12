@@ -1,20 +1,162 @@
 {
+	"internal_referral_form": {
+		"general": {
+			"date_of_ref": "",
+			"spanish_speaker_only": 0
+		},
+		"client_info": { 
+			"name": "",
+			"id": 0,
+			"dob": "",
+			"in_shelter": 0,
+			"safe_phone_num": 0,
+			"email": ""
+		},
+		"referring_dept": {
+			"ref_advocate_or_case_manager": "",
+			"crisis": {
+				"is_crisis": 0,
+				"created_inosnium": 0,
+				"service_assessment_uposnium": 0
+			},
+			"shelter": {
+				"is_shelter": 0,
+				"shelter_intake_uposnium": 0,
+				"service_plan_SMART_uposnium": 0
+			},
+			"housing": {
+				"is_housing": 0,
+				"housing_intake_uposnium": 0,
+				"service_plan_SMART_uposnium": 0
+			},
+			"non_residential": {
+				"is_non_residential": 0,
+				"nr_intake_uposnium": 0,
+				"service_plan_SMART_uposnium": 0
+			}
+		},
+		"referral": {
+			"non_res": 0,
+			"shelter": 0,
+			"legal_immigration_advocacy": 0,
+			"cyp": 0,
+			"lc": 0,
+			"sv": 0
+		},
+		"services_rqst_client": {
+			"case_management": 0,
+			"legal_immigration_advocacy": 0,
+			"cyp_advocacy": 0,
+			"empowerment_educ": 0,
+			"goals_to_meet": "",
+			"other": 0,
+			"other_txt": ""
+		},
+		"recv_dept": {
+			"date_recvd": "",
+			"dept": "",
+			"assigned_to": "",
+			"date": ""
+		}
+	},
+	"service_assessment": {
+		"general": {
+			"date": "",
+			"staff": "",
+			"start_t": "",
+			"end_t": "",
+			"referred_by": {
+				"self": 0,
+				"community_partner": 0,
+				"friend": 0,
+				"family_member": 0,
+				"advertisement": 0,
+				"cyfd": 0,
+				"online": 0,
+				"court": 0,
+				"law_enforcement": 0,
+				"other": 0
+			}
+		},
+		"identifying_info": {
+			"fname": "",
+			"mname": "",
+			"lname": "",
 
-	"general": {
-		"date_of_ref": "",
-		"spanish_speaker_only": 0
-	},
-	"client_info": { 
-		"name": "",
-		"id": 0,
-		"dob": "",
-		"in_shelter": 0,
-		"safe_phone_num": 0,
-		"email": ""
-	},
-	"referring_dept": {
-		"advocate_case_manager": "",
-		"crisis": 0
+			"address": "",
+			"safe_phone": 0,
+			"date_of_birth": "",
+			"age": 0,
+			"gender": "",
+			"language_spoken": {
+				"is_english": 0,
+				"other": ""
+			},
+
+			"ethnicity": {
+				"is_hispanic": 0,
+				"is_non_hispanic": 0,
+				"dont_know": 0,
+				"refused": 0
+			},
+
+			"race": {
+				"is_american_indian_alaska_native": 0,
+				"is_asian": 0,
+				"is_black_african_american": 0,
+				"is_native_hawaiian_pacific_islander": 0,
+				"is_white": 0,
+				"is_other_sec": {
+					"is_other": 0,
+					"other": ""
+				},
+				"is_refused": 0
+			},
+			"sexual_orient": {
+				"is_hetero": 0,
+				"is_lesbian": 0,
+				"is_gay": 0,
+				"is_bisexual": 0,
+				"is_trans": 0,
+				"is_queer": 0,
+				"is_other": 0,
+				"is_refused": 0
+			}
+		},
+		"la_casa_participation": {
+			"is_curr_client_sec": {
+				"is_client": 0,
+				"program": "",
+
+				"type_sec": {
+					"is_shelter": 0,
+					"is_non_res": 0,
+					"is_bip": 0,
+					"is_legal": 0,
+					"is_immigration": 0,
+					"is_cyp": 0,
+					"is_south_valley": 0,
+					"is_housing": 0
+				}
+			},
+			"is_past_client_sec": {
+				"is_client": 0,
+				"program": "",
+
+				"type_sec": {
+					"is_shelter": 0,
+					"is_non_res": 0,
+					"is_bip": 0,
+					"is_legal": 0,
+					"is_immigration": 0,
+					"is_cyp": 0,
+					"is_south_valley": 0,
+					"is_housing": 0
+				}
+			},
+
+			"date_last": ""
+		}
 	}
 }
 
