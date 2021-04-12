@@ -155,7 +155,32 @@
 				}
 			},
 
-			"date_last": ""
+			"date_last_svc": "",
+
+			"is_vet": 0,
+			"is_enrolled_vocational_educ": 0,
+			"highest_educ_lvl": "",
+			"employment_status_sec": {
+				"is_employed": 0,
+				"is_unemployed": 0,
+				"is_actively_seeking": 0,
+				"is_retired": 0
+			},
+			"is_recv_tanf": 0,
+			"is_medicaid": 0,
+
+			"family_income_sec": {
+				"is_0_19623": 0,
+				"is_19624_26438": 0,
+				"is_26439_33253": 0,
+				"is_33254_40068": 0,
+				"is_40069_46883": 0,
+				"is_46884_53698": 0,
+				"is_53699_60531": 0,
+				"is_60532_67328": 0,
+				"is_67329_74143": 0,
+				"is_74144_80958": 0
+			}
 		}
 	}
 }
