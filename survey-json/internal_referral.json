@@ -1,0 +1,62 @@
+{
+	"internal_referral_form": {
+		"general_sec": {
+			"date_of_ref": "",
+			"spanish_speaker_only": 0
+		},
+		"client_info_sec": { 
+			"name": "",
+			"id": 0,
+			"dob": "",
+			"in_shelter": 0,
+			"safe_phone_num": 0,
+			"email": ""
+		},
+		"referring_dept_sec": {
+			"ref_advocate_or_case_manager": "",
+			"crisis_sec": {
+				"is_crisis": 0,
+				"created_inosnium": 0,
+				"service_assessment_uposnium": 0
+			},
+			"shelter_sec": {
+				"is_shelter": 0,
+				"shelter_intake_uposnium": 0,
+				"service_plan_SMART_uposnium": 0
+			},
+			"housing_sec": {
+				"is_housing": 0,
+				"housing_intake_uposnium": 0,
+				"service_plan_SMART_uposnium": 0
+			},
+			"non_residential_sec": {
+				"is_non_residential": 0,
+				"nr_intake_uposnium": 0,
+				"service_plan_SMART_uposnium": 0
+			}
+		},
+		"referral_sec": {
+			"non_res": 0,
+			"shelter": 0,
+			"legal_immigration_advocacy": 0,
+			"cyp": 0,
+			"lc": 0,
+			"sv": 0
+		},
+		"services_rqst_client_sec": {
+			"case_management": 0,
+			"legal_immigration_advocacy": 0,
+			"cyp_advocacy": 0,
+			"empowerment_educ": 0,
+			"goals_to_meet": "",
+			"other": 0,
+			"other_txt": ""
+		},
+		"recv_dept_sec": {
+			"date_recvd": "",
+			"dept": "",
+			"assigned_to": "",
+			"date": ""
+		}
+	}
+}

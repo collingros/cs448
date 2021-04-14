@@ -5,5 +5,12 @@ collin gros
 this directory contains the JSON files that will hold data for
 a user's survey.
 
-each JSON file has a sister file, {name.json.txt} that contains
-a description for each major part of the JSON file (comments).
+english_service_assessment.json:
+	is the translated JSON file from the english service assessment
+	section of the form
+internal_referral.json:
+	is the translated JSON file from the internal referral
+	section of the form
+
+TODO:
+	staff use section, if necessary

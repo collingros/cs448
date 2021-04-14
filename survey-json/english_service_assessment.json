@@ -1,0 +1,592 @@
+{
+	"service_assessment": {
+		"general": {
+			"date": "",
+			"staff": "",
+			"start_t": "",
+			"end_t": "",
+			"referred_by_sec": {
+				"self": 0,
+				"community_partner": 0,
+				"friend": 0,
+				"family_member": 0,
+				"advertisement": 0,
+				"cyfd": 0,
+				"online": 0,
+				"court": 0,
+				"law_enforcement": 0,
+				"other": 0
+			}
+		},
+		"identifying_info": {
+			"fname": "",
+			"mname": "",
+			"lname": "",
+
+			"address": "",
+			"safe_phone": 0,
+			"date_of_birth": "",
+			"age": 0,
+			"gender": "",
+			"language_spoken_sec": {
+				"is_english": 0,
+				"other": ""
+			},
+
+			"ethnicity_sec": {
+				"is_hispanic": 0,
+				"is_non_hispanic": 0,
+				"is_unknown": 0,
+				"is_refused": 0
+			},
+
+			"race_sec": {
+				"is_american_indian_alaska_native": 0,
+				"is_asian": 0,
+				"is_black_african_american": 0,
+				"is_native_hawaiian_pacific_islander": 0,
+				"is_white": 0,
+				"is_other_sec": {
+					"is_other": 0,
+					"other": ""
+				},
+				"is_multi_racial": 0,
+				"is_refused": 0
+			},
+			"sexual_orient_sec": {
+				"is_hetero": 0,
+				"is_lesbian": 0,
+				"is_gay": 0,
+				"is_bisexual": 0,
+				"is_trans": 0,
+				"is_queer": 0,
+				"is_other": 0,
+				"is_refused": 0
+			}
+		},
+		"la_casa_participation": {
+			"is_curr_client_sec": {
+				"is_client": 0,
+				"program": "",
+
+				"type_sec": {
+					"is_shelter": 0,
+					"is_non_res": 0,
+					"is_bip": 0,
+					"is_legal": 0,
+					"is_immigration": 0,
+					"is_cyp": 0,
+					"is_south_valley": 0,
+					"is_housing": 0
+				}
+			},
+			"is_past_client_sec": {
+				"is_client": 0,
+				"program": "",
+
+				"type_sec": {
+					"is_shelter": 0,
+					"is_non_res": 0,
+					"is_bip": 0,
+					"is_legal": 0,
+					"is_immigration": 0,
+					"is_cyp": 0,
+					"is_south_valley": 0,
+					"is_housing": 0
+				}
+			},
+
+			"date_last_svc": "",
+
+			"is_vet": 0,
+			"is_enrolled_vocational_educ": 0,
+			"highest_educ_lvl": "",
+			"employment_status_sec": {
+				"is_employed": 0,
+				"is_unemployed": 0,
+				"is_actively_seeking": 0,
+				"is_retired": 0
+			},
+			"is_recv_tanf": 0,
+			"is_medicaid": 0,
+
+			"family_income_sec": {
+				"is_0_19623": 0,
+				"is_19624_26438": 0,
+				"is_26439_33253": 0,
+				"is_33254_40068": 0,
+				"is_40069_46883": 0,
+				"is_46884_53698": 0,
+				"is_53699_60531": 0,
+				"is_60532_67328": 0,
+				"is_67329_74143": 0,
+				"is_74144_80958": 0
+			},
+			"income": 0,
+			"is_color": 0,
+			"is_cyfd_involvement": 0,
+			"is_cyfd_juvenile_justice": 0,
+			"disabilities": "",
+			"food_allergies": "",
+			"living_status_sec": {
+				"is_with_perpetrator_prev": 0,
+				"is_home": 0,
+				"is_with_friend": 0,
+				"is_transitional": 0,
+				"is_shelter": 0,
+				"is_homeless": 0,
+				"is_jail": 0,
+				"is_unknown": 0
+			}
+		},
+		"abuser_info": {
+			"name": "",
+			"relationship": "",
+			"la_casa_client_sec": {
+				"is_current_client": "",
+				"program": "",
+				"is_past_client": ""
+			},
+			"batterer_intervention_sec": {
+				"has_attended": "",
+				"program_loc_date": ""
+			}
+		},
+		"children_info": {
+			"has_children": 0,
+			"family_size": 0,
+			"is_pregnant": 0,
+			"teen_dating_sec": {
+				"is_teen_dating_violence": 0,
+				"explain": ""
+			},
+
+			"child_1_sec": {
+				"fname": "",
+				"mname": "",
+				"lname": "",
+				"date_of_birth": "",
+				"age": 0,
+				"gender": "",
+				"is_child_witness": 0,
+				"ethnicity_sec": {
+					"is_hispanic": 0,
+					"is_non_hispanic": 0,
+					"is_unknown": 0,
+					"is_refused": 0
+				},
+				"race_sec": {
+					"is_american_indian_alaska_native": 0,
+					"is_asian": 0,
+					"is_black_african_american": 0,
+					"is_native_hawaiian_pacific_islander": 0,
+					"is_white": 0,
+					"is_other_sec": {
+						"is_other": 0,
+						"other": ""
+					},
+					"is_multi_racial": 0,
+					"is_refused": 0
+				},
+				"relationship_sec": {
+					"is_son": 0,
+					"is_daughter": 0,
+					"is_granddaughter": 0,
+					"is_grandson": 0,
+					"is_brother": 0,
+					"is_sister": 0,
+					"is_stepdaughter": 0,
+					"is_stepson": 0,
+					"is_other_sec": {
+						"is_other": 0,
+						"explain": ""
+					}
+				},
+				"will_be_sheltered": 0,
+				"wont_be_sheltered": 0
+			},
+			"child_2_sec": {
+				"fname": "",
+				"mname": "",
+				"lname": "",
+				"date_of_birth": "",
+				"age": 0,
+				"gender": "",
+				"is_child_witness": 0,
+				"ethnicity_sec": {
+					"is_hispanic": 0,
+					"is_non_hispanic": 0,
+					"is_unknown": 0,
+					"is_refused": 0
+				},
+				"race_sec": {
+					"is_american_indian_alaska_native": 0,
+					"is_asian": 0,
+					"is_black_african_american": 0,
+					"is_native_hawaiian_pacific_islander": 0,
+					"is_white": 0,
+					"is_other_sec": {
+						"is_other": 0,
+						"other": ""
+					},
+					"is_multi_racial": 0,
+					"is_refused": 0
+				},
+				"relationship_sec": {
+					"is_son": 0,
+					"is_daughter": 0,
+					"is_granddaughter": 0,
+					"is_grandson": 0,
+					"is_brother": 0,
+					"is_sister": 0,
+					"is_stepdaughter": 0,
+					"is_stepson": 0,
+					"is_other_sec": {
+						"is_other": 0,
+						"explain": ""
+					}
+				},
+				"will_be_sheltered": 0,
+				"wont_be_sheltered": 0
+			},
+			"child_3_sec": {
+				"fname": "",
+				"mname": "",
+				"lname": "",
+				"date_of_birth": "",
+				"age": 0,
+				"gender": "",
+				"is_child_witness": 0,
+				"ethnicity_sec": {
+					"is_hispanic": 0,
+					"is_non_hispanic": 0,
+					"is_unknown": 0,
+					"is_refused": 0
+				},
+				"race_sec": {
+					"is_american_indian_alaska_native": 0,
+					"is_asian": 0,
+					"is_black_african_american": 0,
+					"is_native_hawaiian_pacific_islander": 0,
+					"is_white": 0,
+					"is_other_sec": {
+						"is_other": 0,
+						"other": ""
+					},
+					"is_multi_racial": 0,
+					"is_refused": 0
+				},
+				"relationship_sec": {
+					"is_son": 0,
+					"is_daughter": 0,
+					"is_granddaughter": 0,
+					"is_grandson": 0,
+					"is_brother": 0,
+					"is_sister": 0,
+					"is_stepdaughter": 0,
+					"is_stepson": 0,
+					"is_other_sec": {
+						"is_other": 0,
+						"explain": ""
+					}
+				},
+				"will_be_sheltered": 0,
+				"wont_be_sheltered": 0
+			},
+			"child_4_sec": {
+				"fname": "",
+				"mname": "",
+				"lname": "",
+				"date_of_birth": "",
+				"age": 0,
+				"gender": "",
+				"is_child_witness": 0,
+				"ethnicity_sec": {
+					"is_hispanic": 0,
+					"is_non_hispanic": 0,
+					"is_unknown": 0,
+					"is_refused": 0
+				},
+				"race_sec": {
+					"is_american_indian_alaska_native": 0,
+					"is_asian": 0,
+					"is_black_african_american": 0,
+					"is_native_hawaiian_pacific_islander": 0,
+					"is_white": 0,
+					"is_other_sec": {
+						"is_other": 0,
+						"other": ""
+					},
+					"is_multi_racial": 0,
+					"is_refused": 0
+				},
+				"relationship_sec": {
+					"is_son": 0,
+					"is_daughter": 0,
+					"is_granddaughter": 0,
+					"is_grandson": 0,
+					"is_brother": 0,
+					"is_sister": 0,
+					"is_stepdaughter": 0,
+					"is_stepson": 0,
+					"is_other_sec": {
+						"is_other": 0,
+						"explain": ""
+					}
+				},
+				"will_be_sheltered": 0,
+				"wont_be_sheltered": 0
+			},
+			"child_5_sec": {
+				"fname": "",
+				"mname": "",
+				"lname": "",
+				"date_of_birth": "",
+				"age": 0,
+				"gender": "",
+				"is_child_witness": 0,
+				"ethnicity_sec": {
+					"is_hispanic": 0,
+					"is_non_hispanic": 0,
+					"is_unknown": 0,
+					"is_refused": 0
+				},
+				"race_sec": {
+					"is_american_indian_alaska_native": 0,
+					"is_asian": 0,
+					"is_black_african_american": 0,
+					"is_native_hawaiian_pacific_islander": 0,
+					"is_white": 0,
+					"is_other_sec": {
+						"is_other": 0,
+						"other": ""
+					},
+					"is_multi_racial": 0,
+					"is_refused": 0
+				},
+				"relationship_sec": {
+					"is_son": 0,
+					"is_daughter": 0,
+					"is_granddaughter": 0,
+					"is_grandson": 0,
+					"is_brother": 0,
+					"is_sister": 0,
+					"is_stepdaughter": 0,
+					"is_stepson": 0,
+					"is_other_sec": {
+						"is_other": 0,
+						"explain": ""
+					}
+				},
+				"will_be_sheltered": 0,
+				"wont_be_sheltered": 0
+			},
+			"child_6_sec": {
+				"fname": "",
+				"mname": "",
+				"lname": "",
+				"date_of_birth": "",
+				"age": 0,
+				"gender": "",
+				"is_child_witness": 0,
+				"ethnicity_sec": {
+					"is_hispanic": 0,
+					"is_non_hispanic": 0,
+					"is_unknown": 0,
+					"is_refused": 0
+				},
+				"race_sec": {
+					"is_american_indian_alaska_native": 0,
+					"is_asian": 0,
+					"is_black_african_american": 0,
+					"is_native_hawaiian_pacific_islander": 0,
+					"is_white": 0,
+					"is_other_sec": {
+						"is_other": 0,
+						"other": ""
+					},
+					"is_multi_racial": 0,
+					"is_refused": 0
+				},
+				"relationship_sec": {
+					"is_son": 0,
+					"is_daughter": 0,
+					"is_granddaughter": 0,
+					"is_grandson": 0,
+					"is_brother": 0,
+					"is_sister": 0,
+					"is_stepdaughter": 0,
+					"is_stepson": 0,
+					"is_other_sec": {
+						"is_other": 0,
+						"explain": ""
+					}
+				},
+				"will_be_sheltered": 0,
+				"wont_be_sheltered": 0
+			}
+		},
+		"domestic_v_situation": {
+			"description": "",
+			"is_seeking_shelter": 0,
+			"is_homeless_fleeing": 0,
+			"is_seeking_domv_info": 0,
+			"is_seeking_oop": 0,
+			"is_seeking_immigration_info": 0,
+			"seeking_other_desc": ""
+		},
+		"abuse_in_current_relationship": {
+			"physical_abuse_sec": {
+				"has_slapped": 0,
+				"has_kicked": 0,
+				"has_strangled": 0,
+				"has_punched": 0,
+				"has_pushed": 0,
+				"has_torn": 0,
+				"has_grabbed_neck": 0,
+				"has_thrown": 0,
+				"has_spat_pulled_hair": 0,
+				"has_restrained": 0,
+				"has_harmed_pregnant": 0
+			},
+			"intimidation_sec": {
+				"has_frightened": 0,
+				"has_screamed": 0,
+				"has_smashed": 0,
+				"has_punched_walls": 0,
+				"has_destroyed": 0,
+				"has_displayed_weapons": 0,
+				"has_threatened_suicide": 0,
+				"has_stalked": 0
+			},
+			"emotional_abuse_sec": {
+				"has_belittled": 0,
+				"has_guilty": 0,
+				"has_accused_cheating": 0,
+				"has_insulted_parent": 0,
+				"has_called_names": 0,
+				"has_humiliated": 0,
+				"has_interrupted_sleep_eat": 0,
+				"has_threatened_pet": 0
+			},
+			"isolation_sec": {
+				"has_kept_from_going": 0,
+				"has_opened_mail": 0,
+				"has_listened_phone": 0,
+				"has_followed": 0,
+				"has_questioned": 0,
+				"has_monitored_media": 0,
+				"has_hacked_email": 0,
+				"has_used_gps_track": 0,
+				"has_monitored_text": 0,
+				"has_taken_phone": 0
+			},
+			"minimizing_sec": {
+				"has_made_light": 0,
+				"has_blamed_you": 0,
+				"has_denial": 0,
+				"has_blamed_else": 0
+			},
+			"using_children_sec": {
+				"has_told_children_parent": 0,
+				"has_threatened_takeaway": 0,
+				"has_used_children_messages": 0,
+				"has_visitation_harassment": 0,
+				"has_told_children_norules": 0,
+				"has_threatened_cps": 0,
+				"has_hurt_infront_child": 0,
+				"has_sexual_infront_child": 0,
+				"has_children_attempt": 0,
+				"has_children_hurt": 0
+			},
+			"sexual_abuse_sec": {
+				"has_unwanted_touching": 0,
+				"has_raped": 0,
+				"has_demanded": 0,
+				"has_forced_others": 0,
+				"has_insisted_sexual": 0,
+				"has_refused_safe": 0,
+				"has_prevented_bc": 0,
+				"has_withheld": 0,
+				"has_videotaped": 0
+			},
+			"gender_priv_sec": {
+				"has_treated_servant": 0,
+				"has_acted_master": 0,
+				"has_told_role": 0,
+				"has_not_done_fair_housework": 0,
+				"has_not_shared_childcare": 0,
+				"has_bossed": 0,
+				"has_made_rules_noinput": 0,
+				"has_expected_sexual": 0,
+				"has_threatened_lgbtq": 0
+			},
+			"economic_abuse_sec": {
+				"has_prevented_working_out": 0,
+				"has_made_beg": 0,
+				"has_withheld_info_family_inc": 0,
+				"has_stolen": 0,
+				"has_ruined_credit": 0,
+				"has_prevented_work": 0,
+				"has_refused_to_support": 0,
+				"has_kept_checkbook": 0,
+				"has_major_financial": 0,
+				"has_not_paid_child_support": 0
+			},
+			"coercion_threats_sec": {
+				"has_threatened_harm": 0,
+				"has_tried_drop_charges": 0,
+				"has_threatened_family": 0,
+				"has_made_illegal": 0,
+				"has_threatened_child_away": 0
+			},
+			"trafficking_sec": {
+				"has_forced_sex_for_money": 0,
+				"has_been_coerced_work_money": 0
+			},
+
+			"how_long_current_relationship": "",
+
+			"marital_status_sec": {
+				"is_married": 0,
+				"is_separated": 0,
+				"is_divorced": 0,
+				"is_single": 0,
+				"is_living_together": 0
+			},
+
+			"date_last_incident": "",
+			"when_abuse_started": "",
+			"abuse_occurence": "",
+
+			"abuse_severity_sec": {
+				"is_more_severe": 0,
+				"desc": ""
+			},
+
+			"called_police_sec": {
+				"has_called": 0,
+				"num_times": ""
+			},
+
+			"has_experienced_domestic_past": 0,
+			"domv_target_pop_sec": {
+				"is_adult_survivor": 0,
+				"is_child_survivor": 0,
+				"is_immigrant": 0,
+				"is_elderly": 0,
+				"is_physically_challenged": 0,
+				"is_gay": 0,
+				"is_lesbian": 0,
+				"is_bisexual": 0,
+				"is_transgender": 0,
+				"is_other": 0
+			}
+		},
+		"shared_policy": {
+			"is_shared": 0,
+			"not_receiving": 0
+		}
+	}
+}
+
