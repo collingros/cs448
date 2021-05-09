@@ -1,0 +1,86 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Collin\\Documents\\dotNET\\PDFGen\\PDFGen.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Collin\\Documents\\dotNET\\PDFGen\\PDFGen.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Collin\\Documents\\dotNET\\PDFGen\\PDFGen.csproj",
+        "projectName": "PDFGen",
+        "projectPath": "C:\\Users\\Collin\\Documents\\dotNET\\PDFGen\\PDFGen.csproj",
+        "packagesPath": "C:\\Users\\Collin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Collin\\Documents\\dotNET\\PDFGen\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Collin\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Aspose.Cells": {
+              "target": "Package",
+              "version": "[21.4.0, )"
+            },
+            "Google.Apis.Drive.v3": {
+              "target": "Package",
+              "version": "[1.51.0.2265, )"
+            },
+            "MongoDB.Bson": {
+              "target": "Package",
+              "version": "[2.12.1, )"
+            },
+            "MongoDB.Driver": {
+              "target": "Package",
+              "version": "[2.12.1, )"
+            },
+            "MongoDB.Driver.Core": {
+              "target": "Package",
+              "version": "[2.12.1, )"
+            },
+            "itext7": {
+              "target": "Package",
+              "version": "[7.1.14, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

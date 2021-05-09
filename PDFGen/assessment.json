@@ -1,0 +1,426 @@
+{
+    "Referred By": {
+        "Self": "",
+        "Community Partner": "",
+        "Friend, Family Member, Advertisement": "",
+        "CYFD Protective Services": "",
+        "Online/Internet": "",
+        "Court/Probation/Parole": "",
+        "Law Enforcement": "",
+        "Other": ""
+    },
+    "Identifying Information": {
+        "fullName": "",
+        "currentAddress": "",
+        "safePhoneNumber": "",
+        "Date of Birth": "",
+        "Age": "",
+        "Gender": "",
+        "Language Spoken": {
+            "English": {
+                "Yes": "",
+                "No": "",
+                "Other": ""
+            }
+        },
+        "Ethnicity": {
+            "Hispanic": "",
+            "Non-Hispanic": "",
+            "Don't Know": "",
+            "Refused": ""
+        },
+        "Race": {
+            "American Indian/Alaskan Native": "",
+            "Asian": "",
+            "Black or African American": "",
+            "Native Hawaiian or Pacific Islander": "",
+            "White": "",
+            "Other": "",
+            "Enter Here": "",
+            "Refused": ""
+        },
+        "Sexual Orientation": {
+            "Heterosexual": "",
+            "Lesbian": "",
+            "Gay": "",
+            "Bisexual": "",
+            "Transgender": "",
+            "Queer": "",
+            "Other": "",
+            "Refused": ""
+        }
+    },
+    "La Casa, Inc Participation": {
+        "Are you a current client of La Casa, Inc?": {
+            "Yes": "",
+            "No": "",
+            "If yes, what program?": {
+                "Shelter": "",
+                "Non-Res": "",
+                "BIP": "",
+                "Legal": "",
+                "Immigration": "",
+                "CYP": "",
+                "South Valley": "",
+                "Housing": ""
+            }
+        },
+        "Are you a past client of La Casa, Inc?": {
+            "yes": "",
+            "no": "",
+            "If yes, Date of last service": "",
+            "If yes, what program?": {
+                "Shelter": "",
+                "Non-res": "",
+                "BIP": "",
+                "Legal": "",
+                "Immigration": "",
+                "CYP": "",
+                "South Valley": "",
+                "Housing": ""
+            }
+        },
+        "Veteran Status": {
+            "Yes": "",
+            "No": ""
+        },
+        "Enrolled in Vocational/Educational Program": {
+            "Yes": "",
+            "No": "",
+            "Highest Level of Education": ""
+        },
+        "Employement status": {
+            "Employed": "",
+            "Unemployed": "",
+            "Actively seeking employment": "",
+            "Retired": "",
+            "Receiving TANF/Cash Assistance": {
+                "yes": "",
+                "No": ""
+            },
+            "Medicaid Enrolled": {
+                "yes": "",
+                "No": ""
+            }
+        },
+        "Family Income": {
+            "0 to 19,623": "",
+            "19,624 to 26,438": "",
+            "26,439 to 33,253": "",
+            "33,254 to 40,068": "",
+            "40,069 to 46,883": "",
+            "46,884 to 53,698": "",
+            "53,699 to 60,531": "",
+            "60,532 to 67,328": "",
+            "67,329 to 74,143": "",
+            "74,144 to 80,958": "",
+            "Enter Income": ""
+        },
+        "Do you identify as a person of color?": {
+            "Yes": "",
+            "No": ""
+        },
+        "Involvement with CYFD/CPS (Child Protective Services)": {
+            "Yes": "",
+            "No": ""
+        },
+        "Involvement with CYFD Juvenile Justice Division": {
+            "Yes": "",
+            "No": ""
+        },
+        "Do you have any food disabilities?": {
+            "Yes": "",
+            "No": ""
+        },
+        "Do you have any food allergies": {
+            "Yes": "",
+            "No": ""
+        },
+        "Living status": {
+            "Lives with perpetrator/is in previous situation/relationship": "",
+            "Rent or Own Home": "",
+            "Living with Friend/Relative": "",
+            "Transitional Living": "",
+            "In Shelter": "",
+            "On the street/Homeless": "",
+            "Jail/Correctinoal Facility": "",
+            "Whereabouts Unknown/Neutral": ""
+        }
+    },
+    "Abuser's Information": {
+        "Abuser's Name": "",
+        "Relationship to Abuser": "",
+        "Is your partner/abuse a current client of La Casa Inc?": {
+            "yes13": "",
+            "no14": "",
+            "unknown2": ""
+        },
+        "Has you partner/absuer a past client of La Casa Inc?": {
+            "yes12": "",
+            "no13": "",
+            "unknown3": ""
+        },
+        "If yes what Program": {
+            "Shelter": "",
+            "Non-Res": "",
+            "BIP": "",
+            "Legal": "",
+            "Immigration": ""
+        },
+        "Has your current partner ever attended a Batterer's Intervention Program?": {
+            "Yes": "",
+            "No": "",
+            "Unknown": "",
+            "If yes where and when?": {
+                "enter text0": ""
+            }
+        }
+    },
+    "Children's Information": {
+        "Do you have any children?": {
+            "Yes15": "",
+            "No16": ""
+        },
+        "Family Size": "",
+        "Number of Children": "",
+        "Are there any incidents of teed Dating Violence?": {
+            "Yes": "",
+            "No": "",
+            "If yes, please explain": ""
+        },
+        "Child 1": {
+            "First Name": "",
+            "Middle": "",
+            "Last Name": "",
+            "Date of Birth": {
+                "Month": "",
+                "Day": "",
+                "Year": ""
+            },
+            "Age": "",
+            "Gender": "",
+            "The Child will be in the Shelter": {
+                "Yes": "",
+                "No": ""
+            },
+            "Custody": {
+                "Part Time": "",
+                "Full Time": "",
+                "Not in my custody": "",
+                "No agreement": ""
+            },
+            "Ethnicity": {
+                "Hispanic2": "",
+                "Non Hispanic": "",
+                "Dont Know": "",
+                "Refused3": ""
+            },
+            "Race": {
+                "American Indian/Alaska Native": "",
+                "Asian": "",
+                "African American": "",
+                "Native Hawaiian or Pacific Islander": "",
+                "white": "",
+                "multiracial": "",
+                "Other": "",
+                "Other2": "",
+                "refused": ""
+            },
+            "Relationship to Victim": {
+                "son": "",
+                "daughter": "",
+                "granddaughter": "",
+                "Grandson": "",
+                "Brother": "",
+                "sister": "",
+                "stepdaughter": "",
+                "stepson": "",
+                "other": "",
+                "explain": ""
+            }
+        }
+    },
+    "Describe Domestic Violence Situation": {
+        "How can we help you, can you tell us what broght you here today?": "",
+        "Are you seeking shelter?": {
+            "yes": "",
+            "no": ""
+        },
+        "Are you homeless because you are fleeing domestic violence?": {
+            "yes": "",
+            "no": ""
+        },
+        "Are you seeking Information and education on domestic violence?": {
+            "yes": "",
+            "no": ""
+        },
+        "Are you seeking an Order of Protection": {
+            "yes": "",
+            "no": ""
+        },
+        "Are you seeking information regarding Immigration status?": {
+            "yes": "",
+            "no": ""
+        },
+        "If you are seeking assistance in other areas please describe": ""
+    },
+    "Abuse in Your Current Relationship": {
+        "Physical Abuse": {
+            "slapped": "",
+            "kicked": "",
+            "strangled": "",
+            "punched": "",
+            "pushed/shoved you": "",
+            "torn your clothes": "",
+            "grabbed you around your neck": "",
+            "thrown something at you": "",
+            "spit at you or pulled your hair": "",
+            "harmed you while pregnant": "",
+            "restrained you": ""
+        },
+        "Intimidation": {
+            "freightened you by certain looks, gestures or actions": "",
+            "screamed at you": "",
+            "smashed things": "",
+            "punched walls": "",
+            "destroyed your property": "",
+            "displayed weapons": "",
+            "has threatened to commit suicide": "",
+            "stalked you": ""
+        },
+        "Emotional Abuse": {
+            "belittles you": "",
+            "made you fell guilty": "",
+            "accused you of flirting or cheating on him/her": "",
+            "told you that you are a bad parent (or irresponsible parent)": "",
+            "called you names": "",
+            "humiliated you": "",
+            "interrupted your sleeping or eating": "",
+            "threatened or harmed a pet": ""
+        },
+        "Isolation": {
+            "Kept you from going places you choose (work, school, seeing family or friends)": "",
+            "opened your mail": "",
+            "listed to your phone conversations": "",
+            "followed you around": "",
+            "questioned your whereabouts": "",
+            "monitors social media": "",
+            "hacks into your email": "",
+            "uses GPS to track your location": "",
+            "monitors text messages": "",
+            "takes your phone without permission": ""
+        },
+        "Minimizing, denying and blaming": {
+            "made light of the abuse": "",
+            "said the abuse was your fault": "",
+            "said the abuse didnt happen": "",
+            "blamed someone or something else for the abuse": ""
+        },
+        "Using Children": {
+            "told your children that you are not a good parent": "",
+            "threatened to take away children": "",
+            "used children to deliver messages": "",
+            "used visitation to harass you": "",
+            "told children that they did not have to follow mother's rules": "",
+            "threatened to call CPS": "",
+            "hurt you in fron of children": "",
+            "attempted to be sexual with you in front of children": "",
+            "your children have tried to stop violence1": "",
+            "your children have tried to stop violence2": "",
+            "your children have been hurt due to abuse": ""
+        },
+        "Sexual Abuse": {
+            "unwanted touching": "",
+            "raped you or forced you to have sex": "",
+            "demanded sex": "",
+            "insited on anything sexual that hurts or scares you": "",
+            "refused safe sex practices": "",
+            "prevented you from using birth control": "",
+            "witheld sex as a form of control": "",
+            "videotaped sexual acts without permission": ""
+        },
+        "Gender Based Privilege": {
+            "treated you like a servant": "",
+            "acted like master of the castle": "",
+            "told you that your role/job was": "",
+            "not done fari share of housework": "",
+            "not shared in childcare": "",
+            "bossed you around": "",
+            "made house rules wihtout your input": "",
+            "expected you to be sexual whenever he wants": "",
+            "thretened to out you as LGBTQ": ""
+        },
+        "Economic Abuse": {
+            "prevented you from working outside home": "",
+            "made you ask or beg for money": "",
+            "witheld info about family income(how much money he makes)": "",
+            "stealing you taking your money": "",
+            "ruined your credit or forbade from getting credit": "",
+            "prevents you from working": "",
+            "refuses to help work to support the family": "",
+            "keeps the checkbook from you": "",
+            "made financial decisions without consulting you": "",
+            "does not pay child support": ""
+        },
+        "Coercion and threats": {
+            "threatened to harm you": "",
+            "tried to get you to drop charges": "",
+            "threatened to harm family or friends": "",
+            "made you do something illegal": "",
+            "threatened to take children away": ""
+        },
+        "Trafficking (From the partner or anyone else)": {
+            "Have you been forces to have sex of any kind for money?": {
+                "yes": "",
+                "no": ""
+            },
+            "Another person has forced or coerced me to work for little or no money": {
+                "yes": "",
+                "no": ""
+            }
+        },
+        "How long have you been in your current relationship": "",
+        "Marital Status": {
+            "married": "",
+            "sperated": "",
+            "divorced": "",
+            "single": "",
+            "living together": ""
+        },
+        "Date of last incident": "",
+        "When did the abuse start": "",
+        "How often does the abuse occur": "",
+        "Has the abuse become more severe or frequent in the last siz months?": {
+            "yes": "",
+            "no": ""
+        },
+        "If yes, please describe": "",
+        "Has you or anyone else called the police?": {
+            "yes": "",
+            "no": ""
+        },
+        "If yes how many times?": "",
+        "Have you expereinced domestic violence in past relationships?": {
+            "yes26": "",
+            "no28": ""
+        },
+        "Domestic Violence Target population": {
+            "adult survivor": "",
+            "child survivor/witness": ""
+        },
+        "Domestic Violence target population characteristics(Choose on or more if applicable)": {
+            "immigrant": "",
+            "elderly": "",
+            "physically challenged": "",
+            "gay": "",
+            "lesbian": "",
+            "bisexual": "",
+            "transgender": "",
+            "other": ""
+        },
+        "Non descrimination policy": {
+            "policy shared": "",
+            "not receiving la casa services": ""
+        }
+    }
+}
