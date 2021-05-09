@@ -1,0 +1,752 @@
+        {
+            /*
+             * 
+             * Identifying Information
+             * 
+             */
+
+
+
+            {"Referred By", new BsonDocument{ 
+                    
+                    //question 3
+                    {"Self", answers[2,6]},
+                    {"Community Partner", answers[2,5]},
+                    {"Friend, Family Member, Advertisement", answers[2,4]},
+                    {"CYFD Protective Services", answers[2,3]},
+                    {"Online/Internet", answers[2,2]},
+                    {"Court/Probation/Parole", answers[2,1]},
+                    {"Law Enforcement", answers[2,0]},
+                    {"Other", answers[2,7]},
+
+                }
+            },
+
+            
+
+            {"Identifying Information", new BsonDocument{
+
+                    //question 1
+                    {"fullName", answers[0,0] },
+                    {"currentAddress", answers[0,1] },
+                    {"safePhoneNumber", answers[0,2] },
+                    
+                    //question 2
+                    {"Date of Birth", answers[1,0] + "/" + answers[1,1] + "/" + answers[1,2]},
+
+                    //question 1
+                    {"Age", answers[0,3] },
+                    {"Gender", answers[0, 4] },
+
+
+                    {"Language Spoken", new BsonDocument{
+
+                            {"English", new BsonDocument{
+
+                                    //question 4
+                                    {"Yes", answers[3, 6]},
+                                    {"No", answers[3, 5]},
+                                    {"Other", answers[3, 0]},
+
+                                }
+                            }
+                        }
+                    },
+
+                    {"Ethnicity", new BsonDocument{
+               
+                            //question 4
+                            {"Hispanic", answers[3, 4]},
+                            {"Non-Hispanic", answers[3, 3]},
+                            {"Don't Know", answers[3, 2]},
+                            {"Refused", answers[3, 1]},
+
+                        }
+                    },
+
+                    {"Race", new BsonDocument{
+
+                            //question 5
+                            {"American Indian/Alaskan Native", answers[4, 7]},
+                            {"Asian", answers[4, 6]},
+                            {"Black or African American", answers[4, 5]},
+                            {"Native Hawaiian or Pacific Islander", answers[4, 3]},
+                            {"White", answers[4, 4]},
+                            {"Other", answers[4, 1]},
+                            {"Enter Here", answers[4, 0]},
+                            {"Refused", answers[4, 2]},
+
+                        }
+                    },
+
+                    {"Sexual Orientation", new BsonDocument{
+
+                            //question 6
+                            {"Heterosexual", answers[5, 7]},
+                            {"Lesbian", answers[5, 6]},
+                            {"Gay", answers[5, 5]},
+                            {"Bisexual", answers[5, 4]},
+                            {"Transgender", answers[5, 3]},
+                            {"Queer", answers[5, 2]},
+                            {"Other", answers[5, 1]},
+                            {"Refusd", answers[5, 0]},
+
+                        }
+                    },
+                }
+            },
+
+            
+
+            
+
+             //La Casa Inc Participation
+
+
+
+            
+
+
+            {"La Casa, Inc Participation", new BsonDocument{
+
+                    {"Are you a current client of La Casa, Inc?", new BsonDocument{
+                            //question 7    
+                            {"Yes", answers[6, 9]},
+                            {"No", answers[6, 8]},
+
+                            {"If yes, what program?", new BsonDocument{
+                                    //question 7    
+                                    {"Shelter", answers[6, 7]},
+                                    {"Non-Res", answers[6, 6]},
+                                    {"BIP", answers[6, 5]},
+                                    {"Legal", answers[6, 4]},
+                                    {"Immigration", answers[6, 3]},
+                                    { "CYP", answers[6, 2]},
+                                    {"South Valley", answers[6, 1]},
+                                    {"Housing", answers[6, 0]},
+                                }
+                            },
+                        }
+                    },
+
+
+
+                    {"Are you a past client of La Casa, Inc?", new BsonDocument{
+
+                            //question 8
+                            {"yes", "FIX ME"},
+                            {"no", answers[7, 9]},
+                            {"If yes, Date of last service", answers[7, 0]},
+
+                            {"If yes, what program?", new BsonDocument{
+                                //question 8    
+                                {"Shelter", answers[7, 8]},
+                                    {"Non-res", answers[7, 7]},
+                                    {"BIP", answers[7, 6]},
+                                    {"Legal", answers[7, 5]},
+                                    {"Immigration", answers[7, 4]},
+                                    {"CYP", answers[7, 3]},
+                                    {"South Valley", answers[7, 2]},
+                                    {"Housing", answers[7, 1]},
+                                }
+                            },
+                        }
+                    },
+
+
+
+                    {"Veteran Status", new BsonDocument{
+                            //question 9    
+                            {"Yes", answers[8, 4]},
+                            {"No", answers[8, 3]},
+                        }
+                    },
+
+
+
+                    {"Enrolled in Vocational/Educational Program", new BsonDocument{
+                            //question 9    
+                            {"Yes", answers[8, 2]},
+                            {"No", answers[8, 1]},
+                            {"Highest Level of Education", answers[8, 0]},
+                        }
+                    },
+
+
+                    {"Employement status", new BsonDocument{
+                            //question 10
+                            {"Employed", answers[9, 7]},
+                            {"Unemployed", answers[9, 5]},
+                            {"Actively seeking employment", answers[9, 6]},
+                            {"Retired", answers[9, 4]},
+
+                            {"Receiving TANF/Cash Assistance", new BsonDocument{
+                                    //question 10 
+                                    {"yes", answers[9, 3]},
+                                    {"No", answers[9, 2]},
+                                }
+                            },
+
+                            {"Medicaid Enrolled", new BsonDocument{
+                                    //question 10
+                                    {"yes", answers[9, 1]},
+                                    {"No", answers[9, 0]},
+                                }
+                            },
+                        }
+                    },
+
+
+
+                    {"Family Income", new BsonDocument{
+                            //question 11
+                            {"0 to 19,623", answers[10, 10]},
+                            {"19,624 to 26,438", answers[10, 9]},
+                            {"26,439 to 33,253", answers[10, 8]},
+                            {"33,254 to 40,068", answers[10, 7]},
+                            {"40,069 to 46,883", answers[10, 6]},
+                            {"46,884 to 53,698", answers[10, 5]},
+                            {"53,699 to 60,531", answers[10, 4]},
+                            {"60,532 to 67,328", answers[10, 3]},
+                            {"67,329 to 74,143", answers[10, 2]},
+                            {"74,144 to 80,958", answers[10, 1]},
+                            {"Enter Income", answers[10, 0]},
+                        }
+                    },
+
+
+
+                    {"Do you identify as a person of color?", new BsonDocument{
+                            //question 12
+                            {"Yes", answers[11, 1]},
+                            {"No", answers[11, 0]},
+                        }
+                    },
+
+
+                    {"Involvement with CYFD/CPS (Child Protective Services)", new BsonDocument{
+                            //question 13    
+                            {"Yes", answers[12, 3]},
+                            {"No", answers[12, 1]},
+                        }
+                    },
+
+                    {"Involvement with CYFD Juvenile Justice Division", new BsonDocument{
+                            //question 13    
+                            {"Yes", answers[12, 2]},
+                            {"No", answers[12, 0]},
+                        }
+                    },
+
+
+
+
+                    {"Do you have any food disabilities?", new BsonDocument{
+                            //question 14    
+                            {"Yes", answers[13, 2]},
+                            {"No", answers[13, 1]},
+                        }
+                    },
+
+                    {"Do you have any food allergies", new BsonDocument{
+                            //question 14    
+                            {"Yes", answers[13, 3]},
+                            {"No", answers[13, 0]},
+                        }
+                    },
+
+                    {"Living status", new BsonDocument{
+                            //question 15    
+                            {"Lives with perpetrator/is in previous situation/relationship", answers[14, 7]},
+                            {"Rent or Own Home", answers[14, 6]},
+                            {"Living with Friend/Relative", answers[14, 5]},
+                            {"Transitional Living", answers[14, 4]},
+                            {"In Shelter", answers[14, 3]},
+                            {"On the street/Homeless", answers[14, 2]},
+                            {"Jail/Correctinoal Facility", answers[14, 1]},
+                            {"Whereabouts Unknown/Neutral", answers[14, 0]},
+
+                        }
+                    },
+
+                }
+            },
+
+
+
+
+
+
+             //Abuser's Information
+
+
+
+
+            {"Abuser's Information", new BsonDocument{
+                    //question 16
+                    {"Abuser's Name", answers[15, 0]},
+                    {"Relationship to Abuser", answers[15, 1]},
+
+
+                    {"Is your partner/abuse a current client of La Casa Inc?", new BsonDocument{
+                            //question 17
+                            {"yes13", answers[16, 5]},
+                            {"no14", answers[16, 4]},
+                            {"unknown2", answers[16, 0]},
+                        } 
+                    },
+
+                    {"Has you partner/absuer a past client of La Casa Inc?", new BsonDocument{
+                            //question 17
+                            {"yes12", answers[16, 3]},
+                            {"no13", answers[16, 2]},
+                            {"unknown3", answers[16, 1]},
+                        }
+                    },
+
+                    {"If yes what Program", new BsonDocument{
+                            //question 18
+                            {"Shelter", answers[17, 4]},
+                            {"Non-Res", answers[17, 3]},
+                            {"BIP", answers[17, 2]},
+                            {"Legal", answers[17, 1]},
+                            {"Immigration", answers[17, 0]},
+                        } 
+                    },
+                
+
+
+                    {"Has your current partner ever attended a Batterer's Intervention Program?", new BsonDocument{
+                            //question 19
+                            {"Yes", answers[18, 3]},
+                            {"No", answers[18, 2]},
+                            {"Unknown", answers[18, 1]},
+
+                            {"If yes where and when?", new BsonDocument{
+                                    //question 19    
+                                    {"enter text0", answers[18, 0]},
+                                }
+                            }
+                        }
+                    },
+                }
+            },
+
+            {"Children's Information", new BsonDocument{
+                    //question 20
+                    {"Do you have any children?", new BsonDocument{
+                            {"Yes15", answers[19, 3]},
+                            {"No16", answers[19, 2]},
+                        } 
+                    },
+
+                    //question 20
+                    {"Family Size", answers[19, 0]},
+                    {"Number of Children", answers[19, 1]},
+
+
+                
+                    {"Are there any incidents of teed Dating Violence?", new BsonDocument{
+                            //question 21
+                            {"Yes", answers[20, 2]},
+                            {"No", answers[20, 1]},
+                            {"If yes, please explain", answers[20, 0]},
+                        } 
+                    },
+
+
+                    {"Child 1", new BsonDocument{
+
+                            //question 22    
+                            {"First Name", answers[21, 0]},
+                            {"Middle", answers[21, 1]},
+                            {"Last Name", answers[21, 2]},
+
+                            {"Date of Birth", new BsonDocument{
+                                    //question 22    
+                                    {"Month", answers[21, 5]},
+                                    {"Day", answers[21, 6]},
+                                    {"Year", answers[21, 7]},
+                                }
+                            },
+                            
+                            //question 22
+                            {"Age", answers[21, 3]},
+                            {"Gender", answers[21, 4]},
+
+                            {"The Child will be in the Shelter", new BsonDocument{
+                                    //question 22    
+                                    {"Yes", answers[21, 9]},
+                                    {"No", answers[21, 8]},
+
+                                } 
+                            },
+
+
+                            {"Custody", new BsonDocument{
+                                    //question 23
+                                    {"Part Time", answers[22, 7]},
+                                    {"Full Time", answers[22, 6]},
+                                    {"Not in my custody", answers[22, 5]},
+                                    {"No agreement", answers[22, 4]},
+
+                                } 
+                            },
+
+                            {"Ethnicity", new BsonDocument{
+                                    //question 23
+                                    {"Hispanic2", answers[22, 3]},
+                                    {"Non Hispanic", answers[22, 2]},
+                                    {"Dont Know", answers[22, 1]},
+                                    {"Refused3", answers[22, 0]},
+                                } 
+                            },
+
+                            {"Race", new BsonDocument{
+                                    //question 24    
+                                    {"American Indian/Alaska Native", answers[23, 8]},
+                                    {"Asian", answers[23, 7]},
+                                    {"African American", answers[23, 6]},
+                                    {"Native Hawaiian or Pacific Islander", answers[23, 5]},
+                                    {"white", answers[23, 4]},
+                                    {"multiracial", answers[23, 3]},
+                                    {"Other", answers[23, 2]},
+                                    {"Other2", answers[23, 0]},
+                                    {"refused", answers[23, 1]},
+                                } 
+                            },
+
+
+                            {"Relationship to Victim", new BsonDocument{
+                                    //question 25
+                                    {"son", answers[24, 9]},
+                                    {"daughter", answers[24, 8]},
+                                    {"granddaughter", answers[24, 6]},
+                                    {"Grandson", answers[24, 7]},
+                                    {"Brother", answers[24, 5]},
+                                    {"sister", answers[24, 1]},
+                                    {"stepdaughter", answers[24, 3]},
+                                    {"stepson", answers[24, 4]},
+                                    {"other", answers[24, 2]},
+                                    {"explain", answers[24, 0]},
+                                }
+                            }
+                        }
+                    },
+                }
+            },
+
+
+            {"Describe Domestic Violence Situation", new BsonDocument{
+                    //question 26
+                    {"How can we help you, can you tell us what broght you here today?", answers[25, 0]},
+
+                    
+                    {"Are you seeking shelter?", new BsonDocument{
+                        //question 27    
+                        {"yes", answers[26, 9]},
+                            {"no", answers[26, 8]},
+                        } 
+                    },
+
+                    {"Are you homeless because you are fleeing domestic violence?", new BsonDocument{
+                            //question 27  
+                            {"yes", answers[26, 7]},
+                            {"no", answers[26, 6]},
+                        } 
+                    },
+
+                    {"Are you seeking Information and education on domestic violence?", new BsonDocument{
+                            //question 27  
+                            {"yes", answers[26, 5]},
+                            {"no", answers[26, 4]},
+                        } 
+                    },
+
+                    {"Are you seeking an Order of Protection", new BsonDocument{
+                            //question 27  
+                            {"yes", answers[26, 3]},
+                            {"no", answers[26, 2]},
+                        } 
+                    },
+
+                    {"Are you seeking information regarding Immigration status?", new BsonDocument{
+                            //question 27  
+                            {"yes", answers[26, 1]},
+                            {"no", answers[26, 0]},
+                        } 
+                    },
+
+                    //question 28
+                    {"If you are seeking assistance in other areas please describe", answers[27, 0]}
+
+                }
+            },
+
+
+            {"Abuse in Your Current Relationship", new BsonDocument{
+
+                    {"Physical Abuse", new BsonDocument{ 
+                            //question 29
+                            {"slapped", answers[28, 10]},
+                            {"kicked", answers[28, 9]},
+                            {"strangled", answers[28, 8]},
+                            {"punched", answers[28, 7]},
+                            {"pushed/shoved you", answers[28, 6]},
+                            {"torn your clothes", answers[28, 5]},
+                            {"grabbed you around your neck", answers[28, 4]},
+                            {"thrown something at you", answers[28, 3]},
+                            {"spit at you or pulled your hair", answers[28, 2]},
+                            {"harmed you while pregnant", answers[28, 1]},
+                            {"restrained you", answers[28, 0]},
+                        }
+                    },
+
+
+                    {"Intimidation", new BsonDocument{
+                            //question 30
+                            {"freightened you by certain looks, gestures or actions", answers[29, 7]},
+                            {"screamed at you", answers[29, 6]},
+                            {"smashed things", answers[29, 5]},
+                            {"punched walls", answers[29, 4]},
+                            {"destroyed your property", answers[29, 3]},
+                            {"displayed weapons", answers[29, 2]},
+                            {"has threatened to commit suicide", answers[29, 1]},
+                            {"stalked you", answers[29, 0]},
+                        }
+                    },
+
+                    {"Emotional Abuse", new BsonDocument{
+                            //question 31
+                            {"belittles you", answers[30, 7]},
+                            {"made you fell guilty", answers[30, 6]},
+                            {"accused you of flirting or cheating on him/her", answers[30, 5]},
+                            {"told you that you are a bad parent (or irresponsible parent)", answers[30, 2]},
+                            {"called you names", answers[30, 4]},
+                            {"humiliated you", answers[30, 3]},
+                            {"interrupted your sleeping or eating", answers[30, 1]},
+                            {"threatened or harmed a pet", answers[30, 0]},
+                        }
+                    },
+
+                    {"Isolation", new BsonDocument{
+                            //quesiton 32
+                            {"Kept you from going places you choose (work, school, seeing family or friends)", answers[31, 9]},
+                            {"opened your mail", answers[31, 8]},
+                            {"listed to your phone conversations", answers[31, 6]},
+                            {"followed you around", answers[31, 7]},
+                            {"questioned your whereabouts", answers[31, 5]},
+                            {"monitors social media", answers[31, 4]},
+                            {"hacks into your email", answers[31, 2]},
+                            {"uses GPS to track your location", answers[31, 1]},
+                            {"monitors text messages", answers[31, 3]},
+                            {"takes your phone without permission", answers[31, 0]},
+                        }
+                    },
+
+
+                    {"Minimizing, denying and blaming", new BsonDocument{
+                            //question 33
+                            {"made light of the abuse", answers[32, 3]},
+                            {"said the abuse was your fault", answers[32, 1]},
+                            {"said the abuse didnt happen", answers[32, 2]},
+                            {"blamed someone or something else for the abuse", answers[32, 0]},
+
+                        }
+                    },
+
+                    {"Using Children", new BsonDocument{
+                                //question 35
+                                {"told your children that you are not a good parent", answers[34, 6]},
+                                {"threatened to take away children", answers[34, 7]},
+                                {"used children to deliver messages", answers[34, 5]},
+                                {"used visitation to harass you", answers[34, 3]},
+                                {"told children that they did not have to follow mother's rules", answers[34, 2]},
+                                {"threatened to call CPS", answers[34, 1]},
+                                {"hurt you in fron of children", answers[34, 0]},
+
+                                //question 36
+                                {"attempted to be sexual with you in front of children", answers[35, 3]},
+                                {"your children have tried to stop violence1", answers[35, 2]},
+                                {"your children have tried to stop violence2", answers[35, 1]},
+                                {"your children have been hurt due to abuse", answers[35, 0]},
+                        } 
+                    },
+
+
+                    {"Sexual Abuse", new BsonDocument{
+                            //question 38
+                            { "unwanted touching", answers[37, 7]},
+                            { "raped you or forced you to have sex", answers[37, 6]},
+                            { "demanded sex", answers[37, 5]},
+                            //Missing question "Forced you te have sex with others"
+                            { "insited on anything sexual that hurts or scares you", answers[37, 3]},
+                            { "refused safe sex practices", answers[37, 4]},
+                            { "prevented you from using birth control", answers[37, 1]},
+                            { "witheld sex as a form of control", answers[37, 2]},
+                            { "videotaped sexual acts without permission", answers[37, 0]},
+
+                        } 
+                    },
+
+
+                    {"Gender Based Privilege", new BsonDocument{
+                            //question 39
+                            {"treated you like a servant", answers[38, 4]},
+                            {"acted like master of the castle", answers[38, 3]},
+                            {"told you that your role/job was", answers[38, 2]},
+                            {"not done fari share of housework", answers[38, 1]},
+                            {"not shared in childcare", answers[38, 0]},
+
+                            //question 40
+                            {"bossed you around", answers[39, 1]},
+                            {"made house rules wihtout your input", answers[39, 0]},
+                            {"expected you to be sexual whenever he wants", answers[39, 3]},
+                            {"thretened to out you as LGBTQ", answers[39, 2]},
+
+                            } 
+                    },
+
+                    {"Economic Abuse", new BsonDocument{
+                            //quesiton 41
+                            {"prevented you from working outside home", answers[40, 4]},
+                            {"made you ask or beg for money", answers[40, 3]},
+                            {"witheld info about family income(how much money he makes)", answers[40, 2]},
+                            {"stealing you taking your money", answers[40, 1]},
+
+                            //quesiton 42
+                            {"ruined your credit or forbade from getting credit", answers[41, 4]},
+                            {"prevents you from working", answers[41, 3]},
+                            {"refuses to help work to support the family", answers[41, 2]},
+
+                            //quesiton 41
+                            {"keeps the checkbook from you", answers[40, 0]},
+
+                            //quesiton 42
+                            {"made financial decisions without consulting you", answers[41, 1]},
+                            {"does not pay child support", answers[41, 0]},
+                        }
+                    },
+
+
+                    {"Coercion and threats", new BsonDocument{
+                            //question 34
+                            {"threatened to harm you", answers[33, 4]},
+                            {"tried to get you to drop charges", answers[33, 3]},
+                            {"threatened to harm family or friends", answers[33, 2]},
+                            {"made you do something illegal", answers[33, 0]},
+                            {"threatened to take children away", answers[33, 1]},
+
+                        } 
+                    },
+
+                    {"Trafficking (From the partner or anyone else)", new BsonDocument{
+                            {"Have you been forces to have sex of any kind for money?", new BsonDocument{
+                                    //quesiton 37
+                                    {"yes", answers[36, 3]},
+                                    {"no", answers[36, 2]},
+
+                                } 
+                            },
+
+                            {"Another person has forced or coerced me to work for little or no money", new BsonDocument{
+                                    //quesiton 37
+                                    {"yes", answers[36, 1]},
+                                    {"no", answers[36, 0]},
+                                } 
+                            }
+                        } 
+                    },
+
+
+                    {"How long have you been in your current relationship", answers[42, 0]},
+
+
+                    {"Marital Status", new BsonDocument{
+                            //question 43
+                            {"married", answers[42, 6]},
+                            {"sperated", answers[42, 5]},
+                            {"divorced", answers[42, 4]},
+                            {"single", answers[42, 3]},
+                            {"living together", answers[42, 2]},
+
+                        } 
+                    },
+
+
+                    //question 43
+                    {"Date of last incident", answers[42, 1]},
+
+                    //question 44
+                    {"When did the abuse start", answers[43, 0]},
+                    {"How often does the abuse occur", answers[43, 1]},
+
+                    {"Has the abuse become more severe or frequent in the last siz months?", new BsonDocument{
+                            //question 44
+                            {"yes", answers[43, 4]},
+                            {"no", answers[43, 3]},
+                        } 
+                    },
+
+                    //question 44
+                    {"If yes, please describe", answers[43, 2]},
+
+
+
+
+                    {"Has you or anyone else called the police?", new BsonDocument{
+                        //question 45    
+                            {"yes", answers[44, 5]},
+                            {"no", answers[44, 6]},
+
+                        }   
+                    },
+
+                    //question 45
+                    {"If yes how many times?", answers[44, 0]},
+
+                    {"Have you expereinced domestic violence in past relationships?", new BsonDocument{
+                            //question 45    
+                            {"yes26", answers[44, 3]},
+                            {"no28", answers[44, 4]},
+                        }   
+                    },
+
+                
+
+                    {"Domestic Violence Target population", new BsonDocument{ 
+                            //question 45
+                            {"adult survivor", answers[44, 2]},
+                            {"child survivor/witness", answers[44, 1]},
+                        } 
+                    },
+
+                    {"Domestic Violence target population characteristics(Choose on or more if applicable)", new BsonDocument{
+                            //question 46
+                            {"immigrant", answers[45, 7]},
+                            {"elderly", answers[45, 6]},
+                            {"physically challenged", answers[45, 5]},
+                            {"gay", answers[45, 4]},
+                            {"lesbian", answers[45, 3]},
+                            {"bisexual", answers[45, 2]},
+                            {"transgender", answers[45, 1]},
+                            {"other", answers[45, 0]},
+
+                        } 
+                    },
+
+                    {"Non descrimination policy", new BsonDocument{ 
+                            //question 47
+                            {"policy shared", answers[46, 1]},
+                            {"not receiving la casa services", answers[46, 0]},
+                        } 
+                    }
+
+            
+                }
+            },
+
+            
+            
+
+        };
