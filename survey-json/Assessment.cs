@@ -1,416 +1,1172 @@
-using MongoDB.Bson;
-using System.Collections.Generic;
-using System;
-
-
 namespace QuickType
 {
 
     public partial class Assessment
     {
-        public General General { get; set; }
-        public IdentifyingInfo IdentifyingInfo { get; set; }
-        public LaCasaParticipation LaCasaParticipation { get; set; }
-        public AbuserInfo AbuserInfo { get; set; }
-        public ChildrenInfo ChildrenInfo { get; set; }
-        public DomesticVSituation DomesticVSituation { get; set; }
-        public AbuseInCurrentRelationship AbuseInCurrentRelationship { get; set; }
-        public SharedPolicy SharedPolicy { get; set; }
+        [BsonElement("ReferredBy")]
+        public ReferredBy ReferredBy { get; set; }
+
+        [BsonElement("IdentifyingInformation")]
+        public IdentifyingInformation IdentifyingInformation { get; set; }
+
+        [BsonElement("LaCasaIncParticipation")]
+        public LaCasaIncParticipation LaCasaIncParticipation { get; set; }
+
+        [BsonElement("AbuserSInformation")]
+        public AbuserSInformation AbuserSInformation { get; set; }
+
+        [BsonElement("ChildrenSInformation")]
+        public ChildrenSInformation ChildrenSInformation { get; set; }
+
+        [BsonElement("DescribeDomesticViolenceSituation")]
+        public DescribeDomesticViolenceSituation DescribeDomesticViolenceSituation { get; set; }
+
+        [BsonElement("AbuseInYourCurrentRelationship")]
+        public AbuseInYourCurrentRelationship AbuseInYourCurrentRelationship { get; set; }
+
     }
 
-    public partial class AbuseInCurrentRelationship
+    public partial class AbuseInYourCurrentRelationship
     {
-        public Dictionary<string, long> PhysicalAbuseSec { get; set; }
-        public IntimidationSec IntimidationSec { get; set; }
-        public EmotionalAbuseSec EmotionalAbuseSec { get; set; }
-        public IsolationSec IsolationSec { get; set; }
-        public MinimizingSec MinimizingSec { get; set; }
-        public UsingChildrenSec UsingChildrenSec { get; set; }
-        public SexualAbuseSec SexualAbuseSec { get; set; }
-        public GenderPrivSec GenderPrivSec { get; set; }
-        public EconomicAbuseSec EconomicAbuseSec { get; set; }
-        public CoercionThreatsSec CoercionThreatsSec { get; set; }
-        public TraffickingSec TraffickingSec { get; set; }
-        public string HowLongCurrentRelationship { get; set; }
-        public MaritalStatusSec MaritalStatusSec { get; set; }
-        public string DateLastIncident { get; set; }
-        public string WhenAbuseStarted { get; set; }
-        public string AbuseOccurence { get; set; }
-        public AbuseSeveritySec AbuseSeveritySec { get; set; }
-        public CalledPoliceSec CalledPoliceSec { get; set; }
-        public long HasExperiencedDomesticPast { get; set; }
-        public DomvTargetPopSec DomvTargetPopSec { get; set; }
+        [BsonElement("PhysicalAbuse")]
+        public PhysicalAbuse PhysicalAbuse { get; set; }
+
+        [BsonElement("Intimidation")]
+        public Intimidation Intimidation { get; set; }
+
+        [BsonElement("EmotionalAbuse")]
+        public EmotionalAbuse EmotionalAbuse { get; set; }
+
+        [BsonElement("Isolation")]
+        public Isolation Isolation { get; set; }
+
+        [BsonElement("MinimizingDenyingAndBlaming")]
+        public MinimizingDenyingAndBlaming MinimizingDenyingAndBlaming { get; set; }
+
+        [BsonElement("UsingChildren")]
+        public UsingChildren UsingChildren { get; set; }
+
+        [BsonElement("SexualAbuse")]
+        public SexualAbuse SexualAbuse { get; set; }
+
+        [BsonElement("GenderBasedPrivilege")]
+        public GenderBasedPrivilege GenderBasedPrivilege { get; set; }
+
+        [BsonElement("EconomicAbuse")]
+        public EconomicAbuse EconomicAbuse { get; set; }
+
+        [BsonElement("CoercionAndThreats")]
+        public CoercionAndThreats CoercionAndThreats { get; set; }
+
+        [BsonElement("TraffickingFromThePartnerOrAnyoneElse")]
+        public TraffickingFromThePartnerOrAnyoneElse TraffickingFromThePartnerOrAnyoneElse { get; set; }
+
+        [BsonElement("HowLongHaveYouBeenInYourCurrentRelationship")]
+        public string HowLongHaveYouBeenInYourCurrentRelationship { get; set; }
+
+        [BsonElement("MaritalStatus")]
+        public MaritalStatus MaritalStatus { get; set; }
+
+        [BsonElement("DateOfLastIncident")]
+        public string DateOfLastIncident { get; set; }
+
+        [BsonElement("WhenDidTheAbuseStart")]
+        public string WhenDidTheAbuseStart { get; set; }
+
+        [BsonElement("HowOftenDoesTheAbuseOccur")]
+        public string HowOftenDoesTheAbuseOccur { get; set; }
+
+        [BsonElement("HasTheAbuseBecomeMoreSevereOrFrequentInTheLastSizMonths")]
+        public HasTheAbuseBecomeMoreSevereOrFrequentInTheLastSizMonths HasTheAbuseBecomeMoreSevereOrFrequentInTheLastSizMonths { get; set; }
+
+        [BsonElement("IfYesPleaseDescribe")]
+        public string IfYesPleaseDescribe { get; set; }
+
+        [BsonElement("HasYouOrAnyoneElseCalledThePolice")]
+        public HasTheAbuseBecomeMoreSevereOrFrequentInTheLastSizMonths HasYouOrAnyoneElseCalledThePolice { get; set; }
+
+        [BsonElement("IfYesHowManyTimes")]
+        public string IfYesHowManyTimes { get; set; }
+
+        [BsonElement("HaveYouExpereincedDomesticViolenceInPastRelationships")]
+        public HaveYouExpereincedDomesticViolenceInPastRelationships HaveYouExpereincedDomesticViolenceInPastRelationships { get; set; }
+
+        [BsonElement("DomesticViolenceTargetPopulation")]
+        public DomesticViolenceTargetPopulation DomesticViolenceTargetPopulation { get; set; }
+
+        [BsonElement("DomesticViolenceTargetPopulationCharacteristicsChooseOnOrMoreIfApplicable")]
+        public DomesticViolenceTargetPopulationCharacteristicsChooseOnOrMoreIfApplicable DomesticViolenceTargetPopulationCharacteristicsChooseOnOrMoreIfApplicable { get; set; }
+
+        [BsonElement("NonDescriminationPolicy")]
+        public NonDescriminationPolicy NonDescriminationPolicy { get; set; }
+
     }
 
-    public partial class AbuseSeveritySec
+    public partial class CoercionAndThreats
     {
-        public long IsMoreSevere { get; set; }
-        public string Desc { get; set; }
+        [BsonElement("ThreatenedToHarmYou")]
+        public string ThreatenedToHarmYou { get; set; }
+
+        [BsonElement("TriedToGetYouToDropCharges")]
+        public string TriedToGetYouToDropCharges { get; set; }
+
+        [BsonElement("ThreatenedToHarmFamilyOrFriends")]
+        public string ThreatenedToHarmFamilyOrFriends { get; set; }
+
+        [BsonElement("MadeYouDoSomethingIllegal")]
+        public string MadeYouDoSomethingIllegal { get; set; }
+
+        [BsonElement("ThreatenedToTakeChildrenAway")]
+        public string ThreatenedToTakeChildrenAway { get; set; }
+
     }
 
-    public partial class CalledPoliceSec
+    public partial class DomesticViolenceTargetPopulation
     {
-        public long HasCalled { get; set; }
-        public string NumTimes { get; set; }
+        [BsonElement("AdultSurvivor")]
+        public string AdultSurvivor { get; set; }
+
+        [BsonElement("ChildSurvivorWitness")]
+        public string ChildSurvivorWitness { get; set; }
+
     }
 
-    public partial class CoercionThreatsSec
+    public partial class DomesticViolenceTargetPopulationCharacteristicsChooseOnOrMoreIfApplicable
     {
-        public long HasThreatenedHarm { get; set; }
-        public long HasTriedDropCharges { get; set; }
-        public long HasThreatenedFamily { get; set; }
-        public long HasMadeIllegal { get; set; }
-        public long HasThreatenedChildAway { get; set; }
-    }
+        [BsonElement("Immigrant")]
+        public string Immigrant { get; set; }
 
-    public partial class DomvTargetPopSec
-    {
-        public long IsAdultSurvivor { get; set; }
-        public long IsChildSurvivor { get; set; }
-        public long IsImmigrant { get; set; }
-        public long IsElderly { get; set; }
-        public long IsPhysicallyChallenged { get; set; }
-        public long IsGay { get; set; }
-        public long IsLesbian { get; set; }
-        public long IsBisexual { get; set; }
-        public long IsTransgender { get; set; }
-        public long IsOther { get; set; }
-    }
+        [BsonElement("Elderly")]
+        public string Elderly { get; set; }
 
-    public partial class EconomicAbuseSec
-    {
-        public long HasPreventedWorkingOut { get; set; }
-        public long HasMadeBeg { get; set; }
-        public long HasWithheldInfoFamilyInc { get; set; }
-        public long HasStolen { get; set; }
-        public long HasRuinedCredit { get; set; }
-        public long HasPreventedWork { get; set; }
-        public long HasRefusedToSupport { get; set; }
-        public long HasKeptCheckbook { get; set; }
-        public long HasMajorFinancial { get; set; }
-        public long HasNotPaidChildSupport { get; set; }
-    }
+        [BsonElement("PhysicallyChallenged")]
+        public string PhysicallyChallenged { get; set; }
 
-    public partial class EmotionalAbuseSec
-    {
-        public long HasBelittled { get; set; }
-        public long HasGuilty { get; set; }
-        public long HasAccusedCheating { get; set; }
-        public long HasInsultedParent { get; set; }
-        public long HasCalledNames { get; set; }
-        public long HasHumiliated { get; set; }
-        public long HasInterruptedSleepEat { get; set; }
-        public long HasThreatenedPet { get; set; }
-    }
+        [BsonElement("Gay")]
+        public string Gay { get; set; }
 
-    public partial class GenderPrivSec
-    {
-        public long HasTreatedServant { get; set; }
-        public long HasActedMaster { get; set; }
-        public long HasToldRole { get; set; }
-        public long HasNotDoneFairHousework { get; set; }
-        public long HasNotSharedChildcare { get; set; }
-        public long HasBossed { get; set; }
-        public long HasMadeRulesNoinput { get; set; }
-        public long HasExpectedSexual { get; set; }
-        public long HasThreatenedLgbtq { get; set; }
-    }
+        [BsonElement("Lesbian")]
+        public string Lesbian { get; set; }
 
-    public partial class IntimidationSec
-    {
-        public long HasFrightened { get; set; }
-        public long HasScreamed { get; set; }
-        public long HasSmashed { get; set; }
-        public long HasPunchedWalls { get; set; }
-        public long HasDestroyed { get; set; }
-        public long HasDisplayedWeapons { get; set; }
-        public long HasThreatenedSuicide { get; set; }
-        public long HasStalked { get; set; }
-    }
+        [BsonElement("Bisexual")]
+        public string Bisexual { get; set; }
 
-    public partial class IsolationSec
-    {
-        public long HasKeptFromGoing { get; set; }
-        public long HasOpenedMail { get; set; }
-        public long HasListenedPhone { get; set; }
-        public long HasFollowed { get; set; }
-        public long HasQuestioned { get; set; }
-        public long HasMonitoredMedia { get; set; }
-        public long HasHackedEmail { get; set; }
-        public long HasUsedGpsTrack { get; set; }
-        public long HasMonitoredText { get; set; }
-        public long HasTakenPhone { get; set; }
-    }
+        [BsonElement("Transgender")]
+        public string Transgender { get; set; }
 
-    public partial class MaritalStatusSec
-    {
-        public long IsMarried { get; set; }
-        public long IsSeparated { get; set; }
-        public long IsDivorced { get; set; }
-        public long IsSingle { get; set; }
-        public long IsLivingTogether { get; set; }
-    }
-
-    public partial class MinimizingSec
-    {
-        public long HasMadeLight { get; set; }
-        public long HasBlamedYou { get; set; }
-        public long HasDenial { get; set; }
-        public long HasBlamedElse { get; set; }
-    }
-
-    public partial class SexualAbuseSec
-    {
-        public long HasUnwantedTouching { get; set; }
-        public long HasRaped { get; set; }
-        public long HasDemanded { get; set; }
-        public long HasForcedOthers { get; set; }
-        public long HasInsistedSexual { get; set; }
-        public long HasRefusedSafe { get; set; }
-        public long HasPreventedBc { get; set; }
-        public long HasWithheld { get; set; }
-        public long HasVideotaped { get; set; }
-    }
-
-    public partial class TraffickingSec
-    {
-        public long HasForcedSexForMoney { get; set; }
-        public long HasBeenCoercedWorkMoney { get; set; }
-    }
-
-    public partial class UsingChildrenSec
-    {
-        public long HasToldChildrenParent { get; set; }
-        public long HasThreatenedTakeaway { get; set; }
-        public long HasUsedChildrenMessages { get; set; }
-        public long HasVisitationHarassment { get; set; }
-        public long HasToldChildrenNorules { get; set; }
-        public long HasThreatenedCps { get; set; }
-        public long HasHurtInfrontChild { get; set; }
-        public long HasSexualInfrontChild { get; set; }
-        public long HasChildrenAttempt { get; set; }
-        public long HasChildrenHurt { get; set; }
-    }
-
-    public partial class AbuserInfo
-    {
-        public string Name { get; set; }
-        public string Relationship { get; set; }
-        public LaCasaClientSec LaCasaClientSec { get; set; }
-        public BattererInterventionSec BattererInterventionSec { get; set; }
-    }
-
-    public partial class BattererInterventionSec
-    {
-        public string HasAttended { get; set; }
-        public string ProgramLocDate { get; set; }
-    }
-
-    public partial class LaCasaClientSec
-    {
-        public string IsCurrentClient { get; set; }
-        public string Program { get; set; }
-        public string IsPastClient { get; set; }
-    }
-
-    public partial class ChildrenInfo
-    {
-        public long HasChildren { get; set; }
-        public long FamilySize { get; set; }
-        public long IsPregnant { get; set; }
-        public TeenDatingSec TeenDatingSec { get; set; }
-        public ChildSec Child1_Sec { get; set; }
-        public ChildSec Child2_Sec { get; set; }
-        public ChildSec Child3_Sec { get; set; }
-        public ChildSec Child4_Sec { get; set; }
-        public ChildSec Child5_Sec { get; set; }
-        public ChildSec Child6_Sec { get; set; }
-    }
-
-    public partial class ChildSec
-    {
-        public string Fname { get; set; }
-        public string Mname { get; set; }
-        public string Lname { get; set; }
-        public string DateOfBirth { get; set; }
-        public long Age { get; set; }
-        public string Gender { get; set; }
-        public long IsChildWitness { get; set; }
-        public EthnicitySec EthnicitySec { get; set; }
-        public RaceSec RaceSec { get; set; }
-        public RelationshipSec RelationshipSec { get; set; }
-        public long WillBeSheltered { get; set; }
-        public long WontBeSheltered { get; set; }
-    }
-
-    public partial class EthnicitySec
-    {
-        public long IsHispanic { get; set; }
-        public long IsNonHispanic { get; set; }
-        public long IsUnknown { get; set; }
-        public long IsRefused { get; set; }
-    }
-
-    public partial class RaceSec
-    {
-        public long IsAmericanIndianAlaskaNative { get; set; }
-        public long IsAsian { get; set; }
-        public long IsBlackAfricanAmerican { get; set; }
-        public long IsNativeHawaiianPacificIslander { get; set; }
-        public long IsWhite { get; set; }
-        public RaceSecIsOtherSec IsOtherSec { get; set; }
-        public long IsMultiRacial { get; set; }
-        public long IsRefused { get; set; }
-    }
-
-    public partial class RaceSecIsOtherSec
-    {
-        public long IsOther { get; set; }
+        [BsonElement("Other")]
         public string Other { get; set; }
+
     }
 
-    public partial class RelationshipSec
+    public partial class EconomicAbuse
     {
-        public long IsSon { get; set; }
-        public long IsDaughter { get; set; }
-        public long IsGranddaughter { get; set; }
-        public long IsGrandson { get; set; }
-        public long IsBrother { get; set; }
-        public long IsSister { get; set; }
-        public long IsStepdaughter { get; set; }
-        public long IsStepson { get; set; }
-        public RelationshipSecIsOtherSec IsOtherSec { get; set; }
+        [BsonElement("PreventedYouFromWorkingOutsideHome")]
+        public string PreventedYouFromWorkingOutsideHome { get; set; }
+
+        [BsonElement("MadeYouAskOrBegForMoney")]
+        public string MadeYouAskOrBegForMoney { get; set; }
+
+        [BsonElement("WitheldInfoAboutFamilyIncomeHowMuchMoneyHeMakes")]
+        public string WitheldInfoAboutFamilyIncomeHowMuchMoneyHeMakes { get; set; }
+
+        [BsonElement("StealingYouTakingYourMoney")]
+        public string StealingYouTakingYourMoney { get; set; }
+
+        [BsonElement("RuinedYourCreditOrForbadeFromGettingCredit")]
+        public string RuinedYourCreditOrForbadeFromGettingCredit { get; set; }
+
+        [BsonElement("PreventsYouFromWorking")]
+        public string PreventsYouFromWorking { get; set; }
+
+        [BsonElement("RefusesToHelpWorkToSupportTheFamily")]
+        public string RefusesToHelpWorkToSupportTheFamily { get; set; }
+
+        [BsonElement("KeepsTheCheckbookFromYou")]
+        public string KeepsTheCheckbookFromYou { get; set; }
+
+        [BsonElement("MadeFinancialDecisionsWithoutConsultingYou")]
+        public string MadeFinancialDecisionsWithoutConsultingYou { get; set; }
+
+        [BsonElement("DoesNotPayChildSupport")]
+        public string DoesNotPayChildSupport { get; set; }
+
     }
 
-    public partial class RelationshipSecIsOtherSec
+    public partial class EmotionalAbuse
     {
-        public long IsOther { get; set; }
-        public string Explain { get; set; }
+        [BsonElement("BelittlesYou")]
+        public string BelittlesYou { get; set; }
+
+        [BsonElement("MadeYouFellGuilty")]
+        public string MadeYouFellGuilty { get; set; }
+
+        [BsonElement("AccusedYouOfFlirtingOrCheatingOnHimHer")]
+        public string AccusedYouOfFlirtingOrCheatingOnHimHer { get; set; }
+
+        [BsonElement("ToldYouThatYouAreABadParentOrIrresponsibleParent")]
+        public string ToldYouThatYouAreABadParentOrIrresponsibleParent { get; set; }
+
+        [BsonElement("CalledYouNames")]
+        public string CalledYouNames { get; set; }
+
+        [BsonElement("HumiliatedYou")]
+        public string HumiliatedYou { get; set; }
+
+        [BsonElement("InterruptedYourSleepingOrEating")]
+        public string InterruptedYourSleepingOrEating { get; set; }
+
+        [BsonElement("ThreatenedOrHarmedAPet")]
+        public string ThreatenedOrHarmedAPet { get; set; }
+
     }
 
-    public partial class TeenDatingSec
+    public partial class GenderBasedPrivilege
     {
-        public long IsTeenDatingViolence { get; set; }
-        public string Explain { get; set; }
+        [BsonElement("TreatedYouLikeAServant")]
+        public string TreatedYouLikeAServant { get; set; }
+
+        [BsonElement("ActedLikeMasterOfTheCastle")]
+        public string ActedLikeMasterOfTheCastle { get; set; }
+
+        [BsonElement("ToldYouThatYourRoleJobWas")]
+        public string ToldYouThatYourRoleJobWas { get; set; }
+
+        [BsonElement("NotDoneFariShareOfHousework")]
+        public string NotDoneFariShareOfHousework { get; set; }
+
+        [BsonElement("NotSharedInChildcare")]
+        public string NotSharedInChildcare { get; set; }
+
+        [BsonElement("BossedYouAround")]
+        public string BossedYouAround { get; set; }
+
+        [BsonElement("MadeHouseRulesWihtoutYourInput")]
+        public string MadeHouseRulesWihtoutYourInput { get; set; }
+
+        [BsonElement("ExpectedYouToBeSexualWheneverHeWants")]
+        public string ExpectedYouToBeSexualWheneverHeWants { get; set; }
+
+        [BsonElement("ThretenedToOutYouAsLgbtq")]
+        public string ThretenedToOutYouAsLgbtq { get; set; }
+
     }
 
-    public partial class DomesticVSituation
+    public partial class HasTheAbuseBecomeMoreSevereOrFrequentInTheLastSizMonths
     {
-        public string Description { get; set; }
-        public long IsSeekingShelter { get; set; }
-        public long IsHomelessFleeing { get; set; }
-        public long IsSeekingDomvInfo { get; set; }
-        public long IsSeekingOop { get; set; }
-        public long IsSeekingImmigrationInfo { get; set; }
-        public string SeekingOtherDesc { get; set; }
+        [BsonElement("Yes")]
+        public string Yes { get; set; }
+
+        [BsonElement("No")]
+        public string No { get; set; }
+
     }
 
-    public partial class General
+    public partial class HaveYouExpereincedDomesticViolenceInPastRelationships
     {
-        public string Date { get; set; }
-        public string Staff { get; set; }
-        public string StartT { get; set; }
-        public string EndT { get; set; }
-        public Dictionary<string, long> ReferredBySec { get; set; }
+        [BsonElement("Yes26")]
+        public string Yes26 { get; set; }
+
+        [BsonElement("No28")]
+        public string No28 { get; set; }
+
     }
 
-    public partial class IdentifyingInfo
+    public partial class Intimidation
     {
-        public string Fname { get; set; }
-        public string Mname { get; set; }
-        public string Lname { get; set; }
-        public string Address { get; set; }
-        public long SafePhone { get; set; }
-        public string DateOfBirth { get; set; }
-        public long Age { get; set; }
+        [BsonElement("FreightenedYouByCertainLooksGesturesOrActions")]
+        public string FreightenedYouByCertainLooksGesturesOrActions { get; set; }
+
+        [BsonElement("ScreamedAtYou")]
+        public string ScreamedAtYou { get; set; }
+
+        [BsonElement("SmashedThings")]
+        public string SmashedThings { get; set; }
+
+        [BsonElement("PunchedWalls")]
+        public string PunchedWalls { get; set; }
+
+        [BsonElement("DestroyedYourProperty")]
+        public string DestroyedYourProperty { get; set; }
+
+        [BsonElement("DisplayedWeapons")]
+        public string DisplayedWeapons { get; set; }
+
+        [BsonElement("HasThreatenedToCommitSuicide")]
+        public string HasThreatenedToCommitSuicide { get; set; }
+
+        [BsonElement("StalkedYou")]
+        public string StalkedYou { get; set; }
+
+    }
+
+    public partial class Isolation
+    {
+        [BsonElement("KeptYouFromGoingPlacesYouChooseWorkSchoolSeeingFamilyOrFriends")]
+        public string KeptYouFromGoingPlacesYouChooseWorkSchoolSeeingFamilyOrFriends { get; set; }
+
+        [BsonElement("OpenedYourMail")]
+        public string OpenedYourMail { get; set; }
+
+        [BsonElement("ListedToYourPhoneConversations")]
+        public string ListedToYourPhoneConversations { get; set; }
+
+        [BsonElement("FollowedYouAround")]
+        public string FollowedYouAround { get; set; }
+
+        [BsonElement("QuestionedYourWhereabouts")]
+        public string QuestionedYourWhereabouts { get; set; }
+
+        [BsonElement("MonitorsSocialMedia")]
+        public string MonitorsSocialMedia { get; set; }
+
+        [BsonElement("HacksIntoYourEmail")]
+        public string HacksIntoYourEmail { get; set; }
+
+        [BsonElement("UsesGpsToTrackYourLocation")]
+        public string UsesGpsToTrackYourLocation { get; set; }
+
+        [BsonElement("MonitorsTextMessages")]
+        public string MonitorsTextMessages { get; set; }
+
+        [BsonElement("TakesYourPhoneWithoutPermission")]
+        public string TakesYourPhoneWithoutPermission { get; set; }
+
+    }
+
+    public partial class MaritalStatus
+    {
+        [BsonElement("Married")]
+        public string Married { get; set; }
+
+        [BsonElement("Sperated")]
+        public string Sperated { get; set; }
+
+        [BsonElement("Divorced")]
+        public string Divorced { get; set; }
+
+        [BsonElement("Single")]
+        public string Single { get; set; }
+
+        [BsonElement("LivingTogether")]
+        public string LivingTogether { get; set; }
+
+    }
+
+    public partial class MinimizingDenyingAndBlaming
+    {
+        [BsonElement("MadeLightOfTheAbuse")]
+        public string MadeLightOfTheAbuse { get; set; }
+
+        [BsonElement("SaidTheAbuseWasYourFault")]
+        public string SaidTheAbuseWasYourFault { get; set; }
+
+        [BsonElement("SaidTheAbuseDidntHappen")]
+        public string SaidTheAbuseDidntHappen { get; set; }
+
+        [BsonElement("BlamedSomeoneOrSomethingElseForTheAbuse")]
+        public string BlamedSomeoneOrSomethingElseForTheAbuse { get; set; }
+
+    }
+
+    public partial class NonDescriminationPolicy
+    {
+        [BsonElement("PolicyShared")]
+        public string PolicyShared { get; set; }
+
+        [BsonElement("NotReceivingLaCasaServices")]
+        public string NotReceivingLaCasaServices { get; set; }
+
+    }
+
+    public partial class PhysicalAbuse
+    {
+        [BsonElement("Slapped")]
+        public string Slapped { get; set; }
+
+        [BsonElement("Kicked")]
+        public string Kicked { get; set; }
+
+        [BsonElement("Strangled")]
+        public string Strangled { get; set; }
+
+        [BsonElement("Punched")]
+        public string Punched { get; set; }
+
+        [BsonElement("PushedShovedYou")]
+        public string PushedShovedYou { get; set; }
+
+        [BsonElement("TornYourClothes")]
+        public string TornYourClothes { get; set; }
+
+        [BsonElement("GrabbedYouAroundYourNeck")]
+        public string GrabbedYouAroundYourNeck { get; set; }
+
+        [BsonElement("ThrownSomethingAtYou")]
+        public string ThrownSomethingAtYou { get; set; }
+
+        [BsonElement("SpitAtYouOrPulledYourHair")]
+        public string SpitAtYouOrPulledYourHair { get; set; }
+
+        [BsonElement("HarmedYouWhilePregnant")]
+        public string HarmedYouWhilePregnant { get; set; }
+
+        [BsonElement("RestrainedYou")]
+        public string RestrainedYou { get; set; }
+
+    }
+
+    public partial class SexualAbuse
+    {
+        [BsonElement("UnwantedTouching")]
+        public string UnwantedTouching { get; set; }
+
+        [BsonElement("RapedYouOrForcedYouToHaveSex")]
+        public string RapedYouOrForcedYouToHaveSex { get; set; }
+
+        [BsonElement("DemandedSex")]
+        public string DemandedSex { get; set; }
+
+        [BsonElement("InsitedOnAnythingSexualThatHurtsOrScaresYou")]
+        public string InsitedOnAnythingSexualThatHurtsOrScaresYou { get; set; }
+
+        [BsonElement("RefusedSafeSexPractices")]
+        public string RefusedSafeSexPractices { get; set; }
+
+        [BsonElement("PreventedYouFromUsingBirthControl")]
+        public string PreventedYouFromUsingBirthControl { get; set; }
+
+        [BsonElement("WitheldSexAsAFormOfControl")]
+        public string WitheldSexAsAFormOfControl { get; set; }
+
+        [BsonElement("VideotapedSexualActsWithoutPermission")]
+        public string VideotapedSexualActsWithoutPermission { get; set; }
+
+    }
+
+    public partial class TraffickingFromThePartnerOrAnyoneElse
+    {
+        [BsonElement("HaveYouBeenForcesToHaveSexOfAnyKindForMoney")]
+        public HasTheAbuseBecomeMoreSevereOrFrequentInTheLastSizMonths HaveYouBeenForcesToHaveSexOfAnyKindForMoney { get; set; }
+
+        [BsonElement("AnotherPersonHasForcedOrCoercedMeToWorkForLittleOrNoMoney")]
+        public HasTheAbuseBecomeMoreSevereOrFrequentInTheLastSizMonths AnotherPersonHasForcedOrCoercedMeToWorkForLittleOrNoMoney { get; set; }
+
+    }
+
+    public partial class UsingChildren
+    {
+        [BsonElement("ToldYourChildrenThatYouAreNotAGoodParent")]
+        public string ToldYourChildrenThatYouAreNotAGoodParent { get; set; }
+
+        [BsonElement("ThreatenedToTakeAwayChildren")]
+        public string ThreatenedToTakeAwayChildren { get; set; }
+
+        [BsonElement("UsedChildrenToDeliverMessages")]
+        public string UsedChildrenToDeliverMessages { get; set; }
+
+        [BsonElement("UsedVisitationToHarassYou")]
+        public string UsedVisitationToHarassYou { get; set; }
+
+        [BsonElement("ToldChildrenThatTheyDidNotHaveToFollowMotherSRules")]
+        public string ToldChildrenThatTheyDidNotHaveToFollowMotherSRules { get; set; }
+
+        [BsonElement("ThreatenedToCallCps")]
+        public string ThreatenedToCallCps { get; set; }
+
+        [BsonElement("HurtYouInFronOfChildren")]
+        public string HurtYouInFronOfChildren { get; set; }
+
+        [BsonElement("AttemptedToBeSexualWithYouInFrontOfChildren")]
+        public string AttemptedToBeSexualWithYouInFrontOfChildren { get; set; }
+
+        [BsonElement("YourChildrenHaveTriedToStopViolence1")]
+        public string YourChildrenHaveTriedToStopViolence1 { get; set; }
+
+        [BsonElement("YourChildrenHaveTriedToStopViolence2")]
+        public string YourChildrenHaveTriedToStopViolence2 { get; set; }
+
+        [BsonElement("YourChildrenHaveBeenHurtDueToAbuse")]
+        public string YourChildrenHaveBeenHurtDueToAbuse { get; set; }
+
+    }
+
+    public partial class AbuserSInformation
+    {
+        [BsonElement("AbuserSName")]
+        public string AbuserSName { get; set; }
+
+        [BsonElement("RelationshipToAbuser")]
+        public string RelationshipToAbuser { get; set; }
+
+        [BsonElement("IsYourPartnerAbuseACurrentClientOfLaCasaInc")]
+        public IsYourPartnerAbuseACurrentClientOfLaCasaInc IsYourPartnerAbuseACurrentClientOfLaCasaInc { get; set; }
+
+        [BsonElement("HasYouPartnerAbsuerAPastClientOfLaCasaInc")]
+        public HasYouPartnerAbsuerAPastClientOfLaCasaInc HasYouPartnerAbsuerAPastClientOfLaCasaInc { get; set; }
+
+        [BsonElement("IfYesWhatProgram")]
+        public IfYesWhatProgram IfYesWhatProgram { get; set; }
+
+        [BsonElement("HasYourCurrentPartnerEverAttendedABattererSInterventionProgram")]
+        public HasYourCurrentPartnerEverAttendedABattererSInterventionProgram HasYourCurrentPartnerEverAttendedABattererSInterventionProgram { get; set; }
+
+    }
+
+    public partial class HasYouPartnerAbsuerAPastClientOfLaCasaInc
+    {
+        [BsonElement("Yes12")]
+        public string Yes12 { get; set; }
+
+        [BsonElement("No13")]
+        public string No13 { get; set; }
+
+        [BsonElement("Unknown3")]
+        public string Unknown3 { get; set; }
+
+    }
+
+    public partial class HasYourCurrentPartnerEverAttendedABattererSInterventionProgram
+    {
+        [BsonElement("Yes")]
+        public string Yes { get; set; }
+
+        [BsonElement("No")]
+        public string No { get; set; }
+
+        [BsonElement("Unknown")]
+        public string Unknown { get; set; }
+
+        [BsonElement("IfYesWhereAndWhen")]
+        public IfYesWhereAndWhen IfYesWhereAndWhen { get; set; }
+
+    }
+
+    public partial class IfYesWhereAndWhen
+    {
+        [BsonElement("EnterText0")]
+        public string EnterText0 { get; set; }
+
+    }
+
+    public partial class IfYesWhatProgram
+    {
+        [BsonElement("Shelter")]
+        public string Shelter { get; set; }
+
+        [BsonElement("NonRes")]
+        public string NonRes { get; set; }
+
+        [BsonElement("Bip")]
+        public string Bip { get; set; }
+
+        [BsonElement("Legal")]
+        public string Legal { get; set; }
+
+        [BsonElement("Immigration")]
+        public string Immigration { get; set; }
+
+    }
+
+    public partial class IsYourPartnerAbuseACurrentClientOfLaCasaInc
+    {
+        [BsonElement("Yes13")]
+        public string Yes13 { get; set; }
+
+        [BsonElement("No14")]
+        public string No14 { get; set; }
+
+        [BsonElement("Unknown2")]
+        public string Unknown2 { get; set; }
+
+    }
+
+    public partial class ChildrenSInformation
+    {
+        [BsonElement("DoYouHaveAnyChildren")]
+        public DoYouHaveAnyChildren DoYouHaveAnyChildren { get; set; }
+
+        [BsonElement("FamilySize")]
+        public string FamilySize { get; set; }
+
+        [BsonElement("NumberOfChildren")]
+        public string NumberOfChildren { get; set; }
+
+        [BsonElement("AreThereAnyIncidentsOfTeedDatingViolence")]
+        public AreThereAnyIncidentsOfTeedDatingViolence AreThereAnyIncidentsOfTeedDatingViolence { get; set; }
+
+        [BsonElement("Child1")]
+        public Child1 Child1 { get; set; }
+
+    }
+
+    public partial class AreThereAnyIncidentsOfTeedDatingViolence
+    {
+        [BsonElement("Yes")]
+        public string Yes { get; set; }
+
+        [BsonElement("No")]
+        public string No { get; set; }
+
+        [BsonElement("IfYesPleaseExplain")]
+        public string IfYesPleaseExplain { get; set; }
+
+    }
+
+    public partial class Child1
+    {
+        [BsonElement("FirstName")]
+        public string FirstName { get; set; }
+
+        [BsonElement("Middle")]
+        public string Middle { get; set; }
+
+        [BsonElement("LastName")]
+        public string LastName { get; set; }
+
+        [BsonElement("DateOfBirth")]
+        public DateOfBirth DateOfBirth { get; set; }
+
+        [BsonElement("Age")]
+        public string Age { get; set; }
+
+        [BsonElement("Gender")]
         public string Gender { get; set; }
-        public LanguageSpokenSec LanguageSpokenSec { get; set; }
-        public EthnicitySec EthnicitySec { get; set; }
-        public RaceSec RaceSec { get; set; }
-        public SexualOrientSec SexualOrientSec { get; set; }
+
+        [BsonElement("TheChildWillBeInTheShelter")]
+        public DoYouHaveAnyFoodAllergies TheChildWillBeInTheShelter { get; set; }
+
+        [BsonElement("Custody")]
+        public Custody Custody { get; set; }
+
+        [BsonElement("Ethnicity")]
+        public Child1_Ethnicity Ethnicity { get; set; }
+
+        [BsonElement("Race")]
+        public Child1_Race Race { get; set; }
+
+        [BsonElement("RelationshipToVictim")]
+        public RelationshipToVictim RelationshipToVictim { get; set; }
+
     }
 
-    public partial class LanguageSpokenSec
+    public partial class Custody
     {
-        public long IsEnglish { get; set; }
+        [BsonElement("PartTime")]
+        public string PartTime { get; set; }
+
+        [BsonElement("FullTime")]
+        public string FullTime { get; set; }
+
+        [BsonElement("NotInMyCustody")]
+        public string NotInMyCustody { get; set; }
+
+        [BsonElement("NoAgreement")]
+        public string NoAgreement { get; set; }
+
+    }
+
+    public partial class DateOfBirth
+    {
+        [BsonElement("Month")]
+        public string Month { get; set; }
+
+        [BsonElement("Day")]
+        public string Day { get; set; }
+
+        [BsonElement("Year")]
+        public string Year { get; set; }
+
+    }
+
+    public partial class Child1_Ethnicity
+    {
+        [BsonElement("Hispanic2")]
+        public string Hispanic2 { get; set; }
+
+        [BsonElement("NonHispanic")]
+        public string NonHispanic { get; set; }
+
+        [BsonElement("DontKnow")]
+        public string DontKnow { get; set; }
+
+        [BsonElement("Refused3")]
+        public string Refused3 { get; set; }
+
+    }
+
+    public partial class Child1_Race
+    {
+        [BsonElement("AmericanIndianAlaskaNative")]
+        public string AmericanIndianAlaskaNative { get; set; }
+
+        [BsonElement("Asian")]
+        public string Asian { get; set; }
+
+        [BsonElement("AfricanAmerican")]
+        public string AfricanAmerican { get; set; }
+
+        [BsonElement("NativeHawaiianOrPacificIslander")]
+        public string NativeHawaiianOrPacificIslander { get; set; }
+
+        [BsonElement("White")]
+        public string White { get; set; }
+
+        [BsonElement("Multiracial")]
+        public string Multiracial { get; set; }
+
+        [BsonElement("Other")]
         public string Other { get; set; }
+
+        [BsonElement("Other2")]
+        public string Other2 { get; set; }
+
+        [BsonElement("Refused")]
+        public string Refused { get; set; }
+
     }
 
-    public partial class SexualOrientSec
+    public partial class RelationshipToVictim
     {
-        public long IsHetero { get; set; }
-        public long IsLesbian { get; set; }
-        public long IsGay { get; set; }
-        public long IsBisexual { get; set; }
-        public long IsTrans { get; set; }
-        public long IsQueer { get; set; }
-        public long IsOther { get; set; }
-        public long IsRefused { get; set; }
+        [BsonElement("Son")]
+        public string Son { get; set; }
+
+        [BsonElement("Daughter")]
+        public string Daughter { get; set; }
+
+        [BsonElement("Granddaughter")]
+        public string Granddaughter { get; set; }
+
+        [BsonElement("Grandson")]
+        public string Grandson { get; set; }
+
+        [BsonElement("Brother")]
+        public string Brother { get; set; }
+
+        [BsonElement("Sister")]
+        public string Sister { get; set; }
+
+        [BsonElement("Stepdaughter")]
+        public string Stepdaughter { get; set; }
+
+        [BsonElement("Stepson")]
+        public string Stepson { get; set; }
+
+        [BsonElement("Other")]
+        public string Other { get; set; }
+
+        [BsonElement("Explain")]
+        public string Explain { get; set; }
+
     }
 
-    public partial class LaCasaParticipation
+    public partial class DoYouHaveAnyFoodAllergies
     {
-        public IsClientSec IsCurrClientSec { get; set; }
-        public IsClientSec IsPastClientSec { get; set; }
-        public string DateLastSvc { get; set; }
-        public long IsVet { get; set; }
-        public long IsEnrolledVocationalEduc { get; set; }
-        public string HighestEducLvl { get; set; }
-        public EmploymentStatusSec EmploymentStatusSec { get; set; }
-        public long IsRecvTanf { get; set; }
-        public long IsMedicaid { get; set; }
-        public Dictionary<string, long> FamilyIncomeSec { get; set; }
-        public long Income { get; set; }
-        public long IsColor { get; set; }
-        public long IsCyfdInvolvement { get; set; }
-        public long IsCyfdJuvenileJustice { get; set; }
-        public string Disabilities { get; set; }
-        public string FoodAllergies { get; set; }
-        public LivingStatusSec LivingStatusSec { get; set; }
+        [BsonElement("Yes")]
+        public string Yes { get; set; }
+
+        [BsonElement("No")]
+        public string No { get; set; }
+
     }
 
-    public partial class EmploymentStatusSec
+    public partial class DoYouHaveAnyChildren
     {
-        public long IsEmployed { get; set; }
-        public long IsUnemployed { get; set; }
-        public long IsActivelySeeking { get; set; }
-        public long IsRetired { get; set; }
+        [BsonElement("Yes15")]
+        public string Yes15 { get; set; }
+
+        [BsonElement("No16")]
+        public string No16 { get; set; }
+
     }
 
-    public partial class IsClientSec
+    public partial class DescribeDomesticViolenceSituation
     {
-        public long IsClient { get; set; }
-        public string Program { get; set; }
-        public TypeSec TypeSec { get; set; }
+        [BsonElement("HowCanWeHelpYouCanYouTellUsWhatBroghtYouHereToday")]
+        public string HowCanWeHelpYouCanYouTellUsWhatBroghtYouHereToday { get; set; }
+
+        [BsonElement("AreYouSeekingShelter")]
+        public HasTheAbuseBecomeMoreSevereOrFrequentInTheLastSizMonths AreYouSeekingShelter { get; set; }
+
+        [BsonElement("AreYouHomelessBecauseYouAreFleeingDomesticViolence")]
+        public HasTheAbuseBecomeMoreSevereOrFrequentInTheLastSizMonths AreYouHomelessBecauseYouAreFleeingDomesticViolence { get; set; }
+
+        [BsonElement("AreYouSeekingInformationAndEducationOnDomesticViolence")]
+        public HasTheAbuseBecomeMoreSevereOrFrequentInTheLastSizMonths AreYouSeekingInformationAndEducationOnDomesticViolence { get; set; }
+
+        [BsonElement("AreYouSeekingAnOrderOfProtection")]
+        public HasTheAbuseBecomeMoreSevereOrFrequentInTheLastSizMonths AreYouSeekingAnOrderOfProtection { get; set; }
+
+        [BsonElement("AreYouSeekingInformationRegardingImmigrationStatus")]
+        public HasTheAbuseBecomeMoreSevereOrFrequentInTheLastSizMonths AreYouSeekingInformationRegardingImmigrationStatus { get; set; }
+
+        [BsonElement("IfYouAreSeekingAssistanceInOtherAreasPleaseDescribe")]
+        public string IfYouAreSeekingAssistanceInOtherAreasPleaseDescribe { get; set; }
+
     }
 
-    public partial class TypeSec
+    public partial class IdentifyingInformation
     {
-        public long IsShelter { get; set; }
-        public long IsNonRes { get; set; }
-        public long IsBip { get; set; }
-        public long IsLegal { get; set; }
-        public long IsImmigration { get; set; }
-        public long IsCyp { get; set; }
-        public long IsSouthValley { get; set; }
-        public long IsHousing { get; set; }
+        [BsonElement("FullName")]
+        public string FullName { get; set; }
+
+        [BsonElement("CurrentAddress")]
+        public string CurrentAddress { get; set; }
+
+        [BsonElement("SafePhoneNumber")]
+        public string SafePhoneNumber { get; set; }
+
+        [BsonElement("DateOfBirth")]
+        public string DateOfBirth { get; set; }
+
+        [BsonElement("Age")]
+        public string Age { get; set; }
+
+        [BsonElement("Gender")]
+        public string Gender { get; set; }
+
+        [BsonElement("LanguageSpoken")]
+        public LanguageSpoken LanguageSpoken { get; set; }
+
+        [BsonElement("Ethnicity")]
+        public IdentifyingInformationEthnicity Ethnicity { get; set; }
+
+        [BsonElement("Race")]
+        public IdentifyingInformationRace Race { get; set; }
+
+        [BsonElement("SexualOrientation")]
+        public SexualOrientation SexualOrientation { get; set; }
+
     }
 
-    public partial class LivingStatusSec
+    public partial class IdentifyingInformationEthnicity
     {
-        public long IsWithPerpetratorPrev { get; set; }
-        public long IsHome { get; set; }
-        public long IsWithFriend { get; set; }
-        public long IsTransitional { get; set; }
-        public long IsShelter { get; set; }
-        public long IsHomeless { get; set; }
-        public long IsJail { get; set; }
-        public long IsUnknown { get; set; }
+        [BsonElement("Hispanic")]
+        public string Hispanic { get; set; }
+
+        [BsonElement("NonHispanic")]
+        public string NonHispanic { get; set; }
+
+        [BsonElement("DonTKnow")]
+        public string DonTKnow { get; set; }
+
+        [BsonElement("Refused")]
+        public string Refused { get; set; }
+
     }
 
-    public partial class SharedPolicy
+    public partial class LanguageSpoken
     {
-        public long IsShared { get; set; }
-        public long NotReceiving { get; set; }
+        [BsonElement("English")]
+        public English English { get; set; }
+
+    }
+
+    public partial class English
+    {
+        [BsonElement("Yes")]
+        public string Yes { get; set; }
+
+        [BsonElement("No")]
+        public string No { get; set; }
+
+        [BsonElement("Other")]
+        public string Other { get; set; }
+
+    }
+
+    public partial class IdentifyingInformationRace
+    {
+        [BsonElement("AmericanIndianAlaskanNative")]
+        public string AmericanIndianAlaskanNative { get; set; }
+
+        [BsonElement("Asian")]
+        public string Asian { get; set; }
+
+        [BsonElement("BlackOrAfricanAmerican")]
+        public string BlackOrAfricanAmerican { get; set; }
+
+        [BsonElement("NativeHawaiianOrPacificIslander")]
+        public string NativeHawaiianOrPacificIslander { get; set; }
+
+        [BsonElement("White")]
+        public string White { get; set; }
+
+        [BsonElement("Other")]
+        public string Other { get; set; }
+
+        [BsonElement("EnterHere")]
+        public string EnterHere { get; set; }
+
+        [BsonElement("Refused")]
+        public string Refused { get; set; }
+
+    }
+
+    public partial class SexualOrientation
+    {
+        [BsonElement("Heterosexual")]
+        public string Heterosexual { get; set; }
+
+        [BsonElement("Lesbian")]
+        public string Lesbian { get; set; }
+
+        [BsonElement("Gay")]
+        public string Gay { get; set; }
+
+        [BsonElement("Bisexual")]
+        public string Bisexual { get; set; }
+
+        [BsonElement("Transgender")]
+        public string Transgender { get; set; }
+
+        [BsonElement("Queer")]
+        public string Queer { get; set; }
+
+        [BsonElement("Other")]
+        public string Other { get; set; }
+
+        [BsonElement("Refused")]
+        public string Refused { get; set; }
+
+    }
+
+    public partial class LaCasaIncParticipation
+    {
+        [BsonElement("AreYouACurrentClientOfLaCasaInc")]
+        public AreYouACurrentClientOfLaCasaInc AreYouACurrentClientOfLaCasaInc { get; set; }
+
+        [BsonElement("AreYouAPastClientOfLaCasaInc")]
+        public AreYouAPastClientOfLaCasaInc AreYouAPastClientOfLaCasaInc { get; set; }
+
+        [BsonElement("VeteranStatus")]
+        public DoYouHaveAnyFoodAllergies VeteranStatus { get; set; }
+
+        [BsonElement("EnrolledInVocationalEducationalProgram")]
+        public EnrolledInVocationalEducationalProgram EnrolledInVocationalEducationalProgram { get; set; }
+
+        [BsonElement("EmployementStatus")]
+        public EmployementStatus EmployementStatus { get; set; }
+
+        [BsonElement("FamilyIncome")]
+        public FamilyIncome FamilyIncome { get; set; }
+
+        [BsonElement("DoYouIdentifyAsAPersonOfColor")]
+        public DoYouHaveAnyFoodAllergies DoYouIdentifyAsAPersonOfColor { get; set; }
+
+        [BsonElement("InvolvementWithCyfdCpsChildProtectiveServices")]
+        public DoYouHaveAnyFoodAllergies InvolvementWithCyfdCpsChildProtectiveServices { get; set; }
+
+        [BsonElement("InvolvementWithCyfdJuvenileJusticeDivision")]
+        public DoYouHaveAnyFoodAllergies InvolvementWithCyfdJuvenileJusticeDivision { get; set; }
+
+        [BsonElement("DoYouHaveAnyFoodDisabilities")]
+        public DoYouHaveAnyFoodAllergies DoYouHaveAnyFoodDisabilities { get; set; }
+
+        [BsonElement("DoYouHaveAnyFoodAllergies")]
+        public DoYouHaveAnyFoodAllergies DoYouHaveAnyFoodAllergies { get; set; }
+
+        [BsonElement("LivingStatus")]
+        public LivingStatus LivingStatus { get; set; }
+
+    }
+
+    public partial class AreYouACurrentClientOfLaCasaInc
+    {
+        [BsonElement("Yes")]
+        public string Yes { get; set; }
+
+        [BsonElement("No")]
+        public string No { get; set; }
+
+        [BsonElement("IfYesWhatProgram")]
+        public IfYesWhatProgramClass IfYesWhatProgram { get; set; }
+
+    }
+
+    public partial class IfYesWhatProgramClass
+    {
+        [BsonElement("Shelter")]
+        public string Shelter { get; set; }
+
+        [BsonElement("NonRes")]
+        public string NonRes { get; set; }
+
+        [BsonElement("Bip")]
+        public string Bip { get; set; }
+
+        [BsonElement("Legal")]
+        public string Legal { get; set; }
+
+        [BsonElement("Immigration")]
+        public string Immigration { get; set; }
+
+        [BsonElement("Cyp")]
+        public string Cyp { get; set; }
+
+        [BsonElement("SouthValley")]
+        public string SouthValley { get; set; }
+
+        [BsonElement("Housing")]
+        public string Housing { get; set; }
+
+        [BsonElement("IfYesWhatProgramNonRes")]
+        public string IfYesWhatProgramNonRes { get; set; }
+
+    }
+
+    public partial class AreYouAPastClientOfLaCasaInc
+    {
+        [BsonElement("Yes")]
+        public string Yes { get; set; }
+
+        [BsonElement("No")]
+        public string No { get; set; }
+
+        [BsonElement("IfYesDateOfLastService")]
+        public string IfYesDateOfLastService { get; set; }
+
+        [BsonElement("IfYesWhatProgram")]
+        public IfYesWhatProgramClass IfYesWhatProgram { get; set; }
+
+    }
+
+    public partial class EmployementStatus
+    {
+        [BsonElement("Employed")]
+        public string Employed { get; set; }
+
+        [BsonElement("Unemployed")]
+        public string Unemployed { get; set; }
+
+        [BsonElement("ActivelySeekingEmployment")]
+        public string ActivelySeekingEmployment { get; set; }
+
+        [BsonElement("Retired")]
+        public string Retired { get; set; }
+
+        [BsonElement("ReceivingTanfCashAssistance")]
+        public MedicaidEnrolled ReceivingTanfCashAssistance { get; set; }
+
+        [BsonElement("MedicaidEnrolled")]
+        public MedicaidEnrolled MedicaidEnrolled { get; set; }
+
+    }
+
+    public partial class MedicaidEnrolled
+    {
+        [BsonElement("Yes")]
+        public string Yes { get; set; }
+
+        [BsonElement("No")]
+        public string No { get; set; }
+
+    }
+
+    public partial class EnrolledInVocationalEducationalProgram
+    {
+        [BsonElement("Yes")]
+        public string Yes { get; set; }
+
+        [BsonElement("No")]
+        public string No { get; set; }
+
+        [BsonElement("HighestLevelOfEducation")]
+        public string HighestLevelOfEducation { get; set; }
+
+    }
+
+    public partial class FamilyIncome
+    {
+        [BsonElement("The0To19623")]
+        public string The0To19623 { get; set; }
+
+        [BsonElement("The19624To26438")]
+        public string The19624To26438 { get; set; }
+
+        [BsonElement("The26439To33253")]
+        public string The26439To33253 { get; set; }
+
+        [BsonElement("The33254To40068")]
+        public string The33254To40068 { get; set; }
+
+        [BsonElement("The40069To46883")]
+        public string The40069To46883 { get; set; }
+
+        [BsonElement("The46884To53698")]
+        public string The46884To53698 { get; set; }
+
+        [BsonElement("The53699To60531")]
+        public string The53699To60531 { get; set; }
+
+        [BsonElement("The60532To67328")]
+        public string The60532To67328 { get; set; }
+
+        [BsonElement("The67329To74143")]
+        public string The67329To74143 { get; set; }
+
+        [BsonElement("The74144To80958")]
+        public string The74144To80958 { get; set; }
+
+        [BsonElement("EnterIncome")]
+        public string EnterIncome { get; set; }
+
+    }
+
+    public partial class LivingStatus
+    {
+        [BsonElement("LivesWithPerpetratorIsInPreviousSituationRelationship")]
+        public string LivesWithPerpetratorIsInPreviousSituationRelationship { get; set; }
+
+        [BsonElement("RentOrOwnHome")]
+        public string RentOrOwnHome { get; set; }
+
+        [BsonElement("LivingWithFriendRelative")]
+        public string LivingWithFriendRelative { get; set; }
+
+        [BsonElement("TransitionalLiving")]
+        public string TransitionalLiving { get; set; }
+
+        [BsonElement("InShelter")]
+        public string InShelter { get; set; }
+
+        [BsonElement("OnTheStreetHomeless")]
+        public string OnTheStreetHomeless { get; set; }
+
+        [BsonElement("JailCorrectinoalFacility")]
+        public string JailCorrectinoalFacility { get; set; }
+
+        [BsonElement("WhereaboutsUnknownNeutral")]
+        public string WhereaboutsUnknownNeutral { get; set; }
+
+    }
+
+    public partial class ReferredBy
+    {
+        [BsonElement("Self")]
+        public string Self { get; set; }
+
+        [BsonElement("CommunityPartner")]
+        public string CommunityPartner { get; set; }
+
+        [BsonElement("FriendFamilyMemberAdvertisement")]
+        public string FriendFamilyMemberAdvertisement { get; set; }
+
+        [BsonElement("CyfdProtectiveServices")]
+        public string CyfdProtectiveServices { get; set; }
+
+        [BsonElement("OnlineInternet")]
+        public string OnlineInternet { get; set; }
+
+        [BsonElement("CourtProbationParole")]
+        public string CourtProbationParole { get; set; }
+
+        [BsonElement("LawEnforcement")]
+        public string LawEnforcement { get; set; }
+
+        [BsonElement("Other")]
+        public string Other { get; set; }
+
     }
 }
+
